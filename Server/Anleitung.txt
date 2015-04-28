@@ -9,6 +9,8 @@ Start:
 2. Konsole: In den Ordner 'node-project/dummy' wechseln und 'npm start' ausführen
 
 
+
+test
 ________________
 
 Das Frontend Beispiel kann jetzt über http://localhost:3000/html erreicht werden.
