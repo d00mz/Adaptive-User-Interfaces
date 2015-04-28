@@ -1,0 +1,14 @@
+﻿Vorbereitung (einmalig):
+1. MongoDb & NodeJs installieren
+2. Konsole: npm install -g express
+3. Konsole: In den Ordner 'node-project/dummy' wechseln und 'npm install' ausführen // Laut Dennis optional
+4. Datenbank (db.zip) entpacken
+
+Start:
+1. Konsole: mongod --dbpath %Pfad zum Datenbank-Verzeichnis%
+2. Konsole: In den Ordner 'node-project/dummy' wechseln und 'npm start' ausführen
+
+
+________________
+
+Das Frontend Beispiel kann jetzt über http://localhost:3000/html erreicht werden.

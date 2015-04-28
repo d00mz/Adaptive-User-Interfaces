@@ -1,0 +1,60 @@
+﻿*API*
+**Alle User anzeigen**
+
+[GET]: http://localhost:3000/users
+
+Gibt zurück:
+[
+ {
+ 	"_id": String,
+	"name": String,
+	"heruntergekommen": Float,
+	"edel": Float,
+	"ausgefallen": Float,
+	"mainstream": Float,
+	"gemuetlichkeit": Float,
+	"groesse": Float,
+	"__v": Int,
+	"location":
+	[
+	   Float,
+	   Float
+	]
+ }
+]
+
+**Alle Clubs anzeigen**
+
+[GET]: http://localhost:3000/clubs
+
+Gibt zurück:
+[
+ {
+ 	"_id": String,
+	"name": String,
+	"heruntergekommen": Float,
+	"edel": Float,
+	"ausgefallen": Float,
+	"mainstream": Float,
+	"gemuetlichkeit": Float,
+	"groesse": Float,
+	"__v": Int,
+	"location":
+	[
+	   Float,
+	   Float
+	]
+ }
+]
+
+**User klickt auf Club**
+
+[PUT]: http://localhost:3000/users
+Body:
+{
+	"user_id": String, //ID des Users der geklickt/besucht hat
+	"club_id": String,
+	"amount": Int // fehlt bisher
+}
+
+Gibt User zurück (s.o.)

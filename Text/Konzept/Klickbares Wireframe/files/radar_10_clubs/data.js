@@ -1,0 +1,1381 @@
+﻿$axure.loadCurrentPage({
+  "url":"radar_10_clubs.html",
+  "generationDate":new Date(1416701658305.61),
+  "isCanvasEnabled":false,
+  "variables":["OnLoadVariable"],
+  "page":{
+    "packageId":"58dbf44fe1dd496c9b0255420f1ae40a",
+    "type":"Axure:Page",
+    "name":"Radar 10 Clubs",
+    "notes":{
+},
+    "style":{
+      "baseStyle":"627587b6038d43cca051c114ac41ad32",
+      "pageAlignment":"near",
+      "fill":{
+        "fillType":"solid",
+        "color":0xFFFFFFFF},
+      "image":null,
+      "imageHorizontalAlignment":"near",
+      "imageVerticalAlignment":"near",
+      "imageRepeat":"auto",
+      "favicon":null,
+      "sketchFactor":"0",
+      "colorStyle":"appliedColor",
+      "fontName":"Applied Font",
+      "borderWidth":"0"},
+    "adaptiveStyles":{
+},
+    "interactionMap":{
+},
+    "diagram":{
+      "objects":[{
+          "id":"c0dead2cc7d4429e8531bb33d3be96eb",
+          "label":"",
+          "type":"flowShape",
+          "styleType":"flowShape",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":132,
+              "y":188},
+            "size":{
+              "width":154,
+              "height":154}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"b3a952af328b4b2bafcdb855bc0df698",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "location":{
+                  "x":132,
+                  "y":188},
+                "size":{
+                  "width":154,
+                  "height":154}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/radar_5_clubs/u0.png"}},
+{
+          "id":"3219bfbd8ac449459103f786a2ff096b",
+          "label":"",
+          "type":"flowShape",
+          "styleType":"flowShape",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":154,
+              "y":210},
+            "size":{
+              "width":109,
+              "height":109}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"f8f5493a28084ffb98f88b48046efc80",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "location":{
+                  "x":154,
+                  "y":210},
+                "size":{
+                  "width":109,
+                  "height":109}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/radar_5_clubs/u2.png"}},
+{
+          "id":"701d95bd401e41cb95bff3bd1bf24f72",
+          "label":"",
+          "type":"imageBox",
+          "styleType":"imageBox",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":110,
+              "y":100},
+            "size":{
+              "width":197,
+              "height":400}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"69c2206051cf48c1a2b353a7613d841c",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "location":{
+                  "x":110,
+                  "y":100},
+                "size":{
+                  "width":197,
+                  "height":400}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/radar_5_clubs/u4.png"}},
+{
+          "id":"fc84cc541e1c47b390b2d7ddcc6ffc64",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"buttonShape",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":125,
+              "y":418},
+            "size":{
+              "width":50,
+              "height":32}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"d948da9c5a3d468e83095b28afd21c53",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "location":{
+                  "x":125,
+                  "y":418},
+                "size":{
+                  "width":50,
+                  "height":32}},
+              "adaptiveStyles":{
+}}],
+          "interactionMap":{
+            "onClick":{
+              "description":"OnClick",
+              "cases":[{
+                  "description":"Case 1",
+                  "isNewIfGroup":false,
+                  "actions":[{
+                      "action":"linkWindow",
+                      "description":"Open Radar 5 Clubs in Current Window",
+                      "target":{
+                        "targetType":"page",
+                        "url":"radar_5_clubs.html",
+                        "includeVariables":true},
+                      "linkType":"current"}]}]}},
+          "tabbable":true,
+          "images":{
+            "normal~":"images/radar_5_clubs/u6.png"}},
+{
+          "id":"8d9463d325b74e44bcd509ccc654f3a2",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"buttonShape",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":243,
+              "y":418},
+            "size":{
+              "width":51,
+              "height":32}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"09140cad99cb42dca49dd8873d24a9d3",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "location":{
+                  "x":243,
+                  "y":418},
+                "size":{
+                  "width":51,
+                  "height":32}},
+              "adaptiveStyles":{
+}}],
+          "interactionMap":{
+            "onClick":{
+              "description":"OnClick",
+              "cases":[{
+                  "description":"Case 1",
+                  "isNewIfGroup":false,
+                  "actions":[{
+                      "action":"linkWindow",
+                      "description":"Open Profil1 in Current Window",
+                      "target":{
+                        "targetType":"page",
+                        "url":"profil1.html",
+                        "includeVariables":true},
+                      "linkType":"current"}]}]}},
+          "tabbable":true,
+          "images":{
+            "normal~":"images/radar_5_clubs/u8.png"}},
+{
+          "id":"18baa9077656497ea117edab0f782f6b",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"buttonShape",
+          "visible":true,
+          "style":{
+            "fill":{
+              "fillType":"solid",
+              "color":0xFFCCCCCC},
+            "location":{
+              "x":174,
+              "y":418},
+            "size":{
+              "width":71,
+              "height":32}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"cc239350ff4f485e80e80f75fa5fc9e7",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fill":{
+                  "fillType":"solid",
+                  "color":0xFFCCCCCC},
+                "location":{
+                  "x":174,
+                  "y":418},
+                "size":{
+                  "width":71,
+                  "height":32}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/radar_5_clubs/u10.png"}},
+{
+          "id":"b167a691e6984b2eaf9f52b7f02ad0ad",
+          "label":"",
+          "type":"imageBox",
+          "styleType":"imageBox",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":134,
+              "y":424},
+            "size":{
+              "width":30,
+              "height":17}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"69dafa4b54ee4958b5d66660e4721bdf",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "location":{
+                  "x":134,
+                  "y":424},
+                "size":{
+                  "width":30,
+                  "height":17}},
+              "adaptiveStyles":{
+}}],
+          "interactionMap":{
+            "onClick":{
+              "description":"OnClick",
+              "cases":[{
+                  "description":"Case 1",
+                  "isNewIfGroup":false,
+                  "actions":[{
+                      "action":"linkWindow",
+                      "description":"Open Liste in Current Window",
+                      "target":{
+                        "targetType":"page",
+                        "url":"liste.html",
+                        "includeVariables":true},
+                      "linkType":"current"}]}]}},
+          "tabbable":true,
+          "images":{
+            "normal~":"images/radar_5_clubs/u12.png"}},
+{
+          "id":"88bc641cbc5945b197240c152d8f0ac3",
+          "label":"",
+          "type":"imageBox",
+          "styleType":"imageBox",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":195,
+              "y":420},
+            "size":{
+              "width":27,
+              "height":27}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"b6cd535a554640e58b7b201d6e9de217",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "location":{
+                  "x":195,
+                  "y":420},
+                "size":{
+                  "width":27,
+                  "height":27}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/radar_5_clubs/u14.png"}},
+{
+          "id":"f933fb48492644549ddbde2d820a3cbc",
+          "label":"",
+          "type":"imageBox",
+          "styleType":"imageBox",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":255,
+              "y":422},
+            "size":{
+              "width":26,
+              "height":24}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"5fc247c15914470b92b0f38d423c9d46",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "location":{
+                  "x":255,
+                  "y":422},
+                "size":{
+                  "width":26,
+                  "height":24}},
+              "adaptiveStyles":{
+}}],
+          "interactionMap":{
+            "onClick":{
+              "description":"OnClick",
+              "cases":[{
+                  "description":"Case 1",
+                  "isNewIfGroup":false,
+                  "actions":[{
+                      "action":"linkWindow",
+                      "description":"Open Profil1 in Current Window",
+                      "target":{
+                        "targetType":"page",
+                        "url":"profil1.html",
+                        "includeVariables":true},
+                      "linkType":"current"}]}]}},
+          "tabbable":true,
+          "images":{
+            "normal~":"images/radar_5_clubs/u16.png"}},
+{
+          "id":"e715bbe8e0a545a38694c7666d3f9a9e",
+          "label":"",
+          "type":"flowShape",
+          "styleType":"flowShape",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":174,
+              "y":230},
+            "size":{
+              "width":70,
+              "height":70}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"152a9d422c964ed78b57002a9ac08b00",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "location":{
+                  "x":174,
+                  "y":230},
+                "size":{
+                  "width":70,
+                  "height":70}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/radar_5_clubs/u18.png"}},
+{
+          "id":"fda714022c9245a48a1b13dafb67a782",
+          "label":"",
+          "type":"imageBox",
+          "styleType":"imageBox",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":188,
+              "y":246},
+            "size":{
+              "width":42,
+              "height":39}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"ebbe733e27244876bf990d31bbcca2a4",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "location":{
+                  "x":188,
+                  "y":246},
+                "size":{
+                  "width":42,
+                  "height":39}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/radar_5_clubs/u16.png"}},
+{
+          "id":"81152a0dc61a403e9a35077966af8705",
+          "label":"",
+          "type":"flowShape",
+          "styleType":"flowShape",
+          "visible":true,
+          "style":{
+            "fill":{
+              "fillType":"linearGradient",
+              "colors":[{
+                  "color":0xFF666666},
+{
+                  "color":0xFF666666},
+{
+                  "color":0xFFE4E4E4},
+{
+                  "color":0xFFE4E4E4}]},
+            "location":{
+              "x":134,
+              "y":300},
+            "size":{
+              "width":30,
+              "height":30}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"2bb958b7f3554d2d9cfca9079eb7b0a0",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fill":{
+                  "fillType":"linearGradient",
+                  "colors":[{
+                      "color":0xFF666666},
+{
+                      "color":0xFF666666},
+{
+                      "color":0xFFE4E4E4},
+{
+                      "color":0xFFE4E4E4}]},
+                "location":{
+                  "x":134,
+                  "y":300},
+                "size":{
+                  "width":30,
+                  "height":30}},
+              "adaptiveStyles":{
+}}],
+          "interactionMap":{
+            "onClick":{
+              "description":"OnClick",
+              "cases":[{
+                  "description":"Case 1",
+                  "isNewIfGroup":false,
+                  "actions":[{
+                      "action":"linkWindow",
+                      "description":"Open ClubA in Current Window",
+                      "target":{
+                        "targetType":"page",
+                        "url":"cluba.html",
+                        "includeVariables":true},
+                      "linkType":"current"}]}]}},
+          "tabbable":true,
+          "images":{
+            "normal~":"images/radar_5_clubs/u22.png"}},
+{
+          "id":"a77a390ecb7f495b8d92ddaf590a9f1f",
+          "label":"",
+          "type":"flowShape",
+          "styleType":"flowShape",
+          "visible":true,
+          "style":{
+            "fill":{
+              "fillType":"linearGradient",
+              "colors":[{
+                  "color":0xFF666666},
+{
+                  "color":0xFF666666},
+{
+                  "color":0xFFE4E4E4},
+{
+                  "color":0xFFE4E4E4}]},
+            "location":{
+              "x":160,
+              "y":214},
+            "size":{
+              "width":21,
+              "height":21}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"3f90cef2f83f46db9cbf5b47156e0a17",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fill":{
+                  "fillType":"linearGradient",
+                  "colors":[{
+                      "color":0xFF666666},
+{
+                      "color":0xFF666666},
+{
+                      "color":0xFFE4E4E4},
+{
+                      "color":0xFFE4E4E4}]},
+                "location":{
+                  "x":160,
+                  "y":214},
+                "size":{
+                  "width":21,
+                  "height":21}},
+              "adaptiveStyles":{
+}}],
+          "interactionMap":{
+            "onClick":{
+              "description":"OnClick",
+              "cases":[{
+                  "description":"Case 1",
+                  "isNewIfGroup":false,
+                  "actions":[{
+                      "action":"linkWindow",
+                      "description":"Open ClubB in Current Window",
+                      "target":{
+                        "targetType":"page",
+                        "url":"clubb.html",
+                        "includeVariables":true},
+                      "linkType":"current"}]}]}},
+          "tabbable":true,
+          "images":{
+            "normal~":"images/radar_5_clubs/u24.png"}},
+{
+          "id":"0a175478ed1a4c31b01a73bc04631594",
+          "label":"",
+          "type":"flowShape",
+          "styleType":"flowShape",
+          "visible":true,
+          "style":{
+            "fill":{
+              "fillType":"linearGradient",
+              "colors":[{
+                  "color":0xFF666666},
+{
+                  "color":0xFF666666},
+{
+                  "color":0xFFE4E4E4},
+{
+                  "color":0xFFE4E4E4}]},
+            "location":{
+              "x":217,
+              "y":290},
+            "size":{
+              "width":10,
+              "height":10}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"1e190113736645ba8c5a273a33bb8043",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fill":{
+                  "fillType":"linearGradient",
+                  "colors":[{
+                      "color":0xFF666666},
+{
+                      "color":0xFF666666},
+{
+                      "color":0xFFE4E4E4},
+{
+                      "color":0xFFE4E4E4}]},
+                "location":{
+                  "x":217,
+                  "y":290},
+                "size":{
+                  "width":10,
+                  "height":10}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/radar_5_clubs/u26.png"}},
+{
+          "id":"593109f7f93b43eb9127cf7e19b7fd62",
+          "label":"",
+          "type":"flowShape",
+          "styleType":"flowShape",
+          "visible":true,
+          "style":{
+            "fill":{
+              "fillType":"linearGradient",
+              "colors":[{
+                  "color":0xFF666666},
+{
+                  "color":0xFF666666},
+{
+                  "color":0xFFE4E4E4},
+{
+                  "color":0xFFE4E4E4}]},
+            "location":{
+              "x":270,
+              "y":285},
+            "size":{
+              "width":20,
+              "height":20}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"268d86d2cf5743e696af5a41d194c25d",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fill":{
+                  "fillType":"linearGradient",
+                  "colors":[{
+                      "color":0xFF666666},
+{
+                      "color":0xFF666666},
+{
+                      "color":0xFFE4E4E4},
+{
+                      "color":0xFFE4E4E4}]},
+                "location":{
+                  "x":270,
+                  "y":285},
+                "size":{
+                  "width":20,
+                  "height":20}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/radar_5_clubs/u28.png"}},
+{
+          "id":"f963d95faaf546d7bd5a87f547f49fd2",
+          "label":"",
+          "type":"flowShape",
+          "styleType":"flowShape",
+          "visible":true,
+          "style":{
+            "fill":{
+              "fillType":"linearGradient",
+              "colors":[{
+                  "color":0xFF666666},
+{
+                  "color":0xFF666666},
+{
+                  "color":0xFFE4E4E4},
+{
+                  "color":0xFFE4E4E4}]},
+            "location":{
+              "x":217,
+              "y":314},
+            "size":{
+              "width":16,
+              "height":16}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"b9978a1ef6b6402a8eb64e98318648f5",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fill":{
+                  "fillType":"linearGradient",
+                  "colors":[{
+                      "color":0xFF666666},
+{
+                      "color":0xFF666666},
+{
+                      "color":0xFFE4E4E4},
+{
+                      "color":0xFFE4E4E4}]},
+                "location":{
+                  "x":217,
+                  "y":314},
+                "size":{
+                  "width":16,
+                  "height":16}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/radar_5_clubs/u30.png"}},
+{
+          "id":"506620837a3848ec8b5df7ca86c0d9cb",
+          "label":"",
+          "type":"flowShape",
+          "styleType":"flowShape",
+          "visible":true,
+          "style":{
+            "fill":{
+              "fillType":"linearGradient",
+              "colors":[{
+                  "color":0xFFFFFFFF},
+{
+                  "color":0xFFFFFFFF},
+{
+                  "color":0xFFE4E4E4},
+{
+                  "color":0xFFE4E4E4}]},
+            "location":{
+              "x":154,
+              "y":378},
+            "size":{
+              "width":20,
+              "height":20}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"61c719e5b7384dcc8bf228898c0d6888",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fill":{
+                  "fillType":"linearGradient",
+                  "colors":[{
+                      "color":0xFFFFFFFF},
+{
+                      "color":0xFFFFFFFF},
+{
+                      "color":0xFFE4E4E4},
+{
+                      "color":0xFFE4E4E4}]},
+                "location":{
+                  "x":154,
+                  "y":378},
+                "size":{
+                  "width":20,
+                  "height":20}},
+              "adaptiveStyles":{
+}}],
+          "interactionMap":{
+            "onClick":{
+              "description":"OnClick",
+              "cases":[{
+                  "description":"Case 1",
+                  "isNewIfGroup":false,
+                  "actions":[{
+                      "action":"linkWindow",
+                      "description":"Open Radar 5 Clubs in Current Window",
+                      "target":{
+                        "targetType":"page",
+                        "url":"radar_5_clubs.html",
+                        "includeVariables":true},
+                      "linkType":"current"}]}]}},
+          "tabbable":true,
+          "images":{
+            "normal~":"images/radar_5_clubs/u32.png"}},
+{
+          "id":"f5d30d772c1f4a419b59260dec4d391b",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "fontSize":"20px",
+            "location":{
+              "x":160,
+              "y":375},
+            "size":{
+              "width":13,
+              "height":23}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"869f298dcef8476fbe796518382f59ac",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontSize":"20px",
+                "location":{
+                  "x":160,
+                  "y":375},
+                "size":{
+                  "width":13,
+                  "height":23}},
+              "adaptiveStyles":{
+}}],
+          "interactionMap":{
+            "onClick":{
+              "description":"OnClick",
+              "cases":[{
+                  "description":"Case 1",
+                  "isNewIfGroup":false,
+                  "actions":[{
+                      "action":"linkWindow",
+                      "description":"Open Radar 5 Clubs in Current Window",
+                      "target":{
+                        "targetType":"page",
+                        "url":"radar_5_clubs.html",
+                        "includeVariables":true},
+                      "linkType":"current"}]}]}},
+          "tabbable":true,
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"dfce70206301433e88f8533f5bcfdae2",
+          "label":"",
+          "type":"flowShape",
+          "styleType":"flowShape",
+          "visible":true,
+          "style":{
+            "fill":{
+              "fillType":"linearGradient",
+              "colors":[{
+                  "color":0xFFFFFFFF},
+{
+                  "color":0xFFFFFFFF},
+{
+                  "color":0xFFE4E4E4},
+{
+                  "color":0xFFE4E4E4}]},
+            "location":{
+              "x":250,
+              "y":379},
+            "size":{
+              "width":20,
+              "height":20}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"39afd7391e764706a4d40924bf769c36",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fill":{
+                  "fillType":"linearGradient",
+                  "colors":[{
+                      "color":0xFFFFFFFF},
+{
+                      "color":0xFFFFFFFF},
+{
+                      "color":0xFFE4E4E4},
+{
+                      "color":0xFFE4E4E4}]},
+                "location":{
+                  "x":250,
+                  "y":379},
+                "size":{
+                  "width":20,
+                  "height":20}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/radar_5_clubs/u32.png"}},
+{
+          "id":"2593fbfc268d4ad089689e3f8d0625f1",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "fontSize":"16px",
+            "location":{
+              "x":255,
+              "y":380},
+            "size":{
+              "width":13,
+              "height":18}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"a6107d6895dd4d748ffbe6391a18137d",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fontSize":"16px",
+                "location":{
+                  "x":255,
+                  "y":380},
+                "size":{
+                  "width":13,
+                  "height":18}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"c5c348f313994d89baec88fd22618ad2",
+          "label":"",
+          "type":"buttonShape",
+          "styleType":"paragraph",
+          "visible":true,
+          "style":{
+            "location":{
+              "x":188,
+              "y":380},
+            "size":{
+              "width":52,
+              "height":15}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"a7c1d35adbc949fb83deb250ea0243d0",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "location":{
+                  "x":188,
+                  "y":380},
+                "size":{
+                  "width":52,
+                  "height":15}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"resources/images/transparent.gif"}},
+{
+          "id":"060ad99272ef4d119afa213f797af8da",
+          "label":"",
+          "type":"flowShape",
+          "styleType":"flowShape",
+          "visible":true,
+          "style":{
+            "fill":{
+              "fillType":"linearGradient",
+              "colors":[{
+                  "color":0xFF666666},
+{
+                  "color":0xFF666666},
+{
+                  "color":0xFFE4E4E4},
+{
+                  "color":0xFFE4E4E4}]},
+            "location":{
+              "x":148,
+              "y":257},
+            "size":{
+              "width":16,
+              "height":16}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"2efc6f98bc8848e6990d553341a77f76",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fill":{
+                  "fillType":"linearGradient",
+                  "colors":[{
+                      "color":0xFF666666},
+{
+                      "color":0xFF666666},
+{
+                      "color":0xFFE4E4E4},
+{
+                      "color":0xFFE4E4E4}]},
+                "location":{
+                  "x":148,
+                  "y":257},
+                "size":{
+                  "width":16,
+                  "height":16}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/radar_5_clubs/u30.png"}},
+{
+          "id":"2d1993a4a4c44a89b337abc6c6b08485",
+          "label":"",
+          "type":"flowShape",
+          "styleType":"flowShape",
+          "visible":true,
+          "style":{
+            "fill":{
+              "fillType":"linearGradient",
+              "colors":[{
+                  "color":0xFF666666},
+{
+                  "color":0xFF666666},
+{
+                  "color":0xFFE4E4E4},
+{
+                  "color":0xFFE4E4E4}]},
+            "location":{
+              "x":241,
+              "y":183},
+            "size":{
+              "width":27,
+              "height":27}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"1599a596cbb9482680fb705157be78d8",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fill":{
+                  "fillType":"linearGradient",
+                  "colors":[{
+                      "color":0xFF666666},
+{
+                      "color":0xFF666666},
+{
+                      "color":0xFFE4E4E4},
+{
+                      "color":0xFFE4E4E4}]},
+                "location":{
+                  "x":241,
+                  "y":183},
+                "size":{
+                  "width":27,
+                  "height":27}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/radar_10_clubs/u44.png"}},
+{
+          "id":"00789b8622ca43eb9ed766bd9ae38a07",
+          "label":"",
+          "type":"flowShape",
+          "styleType":"flowShape",
+          "visible":true,
+          "style":{
+            "fill":{
+              "fillType":"linearGradient",
+              "colors":[{
+                  "color":0xFF666666},
+{
+                  "color":0xFF666666},
+{
+                  "color":0xFFE4E4E4},
+{
+                  "color":0xFFE4E4E4}]},
+            "location":{
+              "x":244,
+              "y":246},
+            "size":{
+              "width":16,
+              "height":16}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"08720d1d3c9f4cf3b299dbc6eec7c2a7",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fill":{
+                  "fillType":"linearGradient",
+                  "colors":[{
+                      "color":0xFF666666},
+{
+                      "color":0xFF666666},
+{
+                      "color":0xFFE4E4E4},
+{
+                      "color":0xFFE4E4E4}]},
+                "location":{
+                  "x":244,
+                  "y":246},
+                "size":{
+                  "width":16,
+                  "height":16}},
+              "adaptiveStyles":{
+}}],
+          "interactionMap":{
+            "onClick":{
+              "description":"OnClick",
+              "cases":[{
+                  "description":"Case 1",
+                  "isNewIfGroup":false,
+                  "actions":[{
+                      "action":"linkWindow",
+                      "description":"Open ClubC in Current Window",
+                      "target":{
+                        "targetType":"page",
+                        "url":"clubc.html",
+                        "includeVariables":true},
+                      "linkType":"current"}]}]}},
+          "tabbable":true,
+          "images":{
+            "normal~":"images/radar_5_clubs/u30.png"}},
+{
+          "id":"390519a7e7b34a848b3aa8bd104680d5",
+          "label":"",
+          "type":"flowShape",
+          "styleType":"flowShape",
+          "visible":true,
+          "style":{
+            "fill":{
+              "fillType":"linearGradient",
+              "colors":[{
+                  "color":0xFF666666},
+{
+                  "color":0xFF666666},
+{
+                  "color":0xFFE4E4E4},
+{
+                  "color":0xFFE4E4E4}]},
+            "location":{
+              "x":267,
+              "y":225},
+            "size":{
+              "width":18,
+              "height":18}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"4367734127b944bc94b08c3d03c472b3",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fill":{
+                  "fillType":"linearGradient",
+                  "colors":[{
+                      "color":0xFF666666},
+{
+                      "color":0xFF666666},
+{
+                      "color":0xFFE4E4E4},
+{
+                      "color":0xFFE4E4E4}]},
+                "location":{
+                  "x":267,
+                  "y":225},
+                "size":{
+                  "width":18,
+                  "height":18}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/radar_10_clubs/u48.png"}},
+{
+          "id":"f48edfb6b1a84cb4809d242798a843c4",
+          "label":"",
+          "type":"flowShape",
+          "styleType":"flowShape",
+          "visible":true,
+          "style":{
+            "fill":{
+              "fillType":"linearGradient",
+              "colors":[{
+                  "color":0xFF666666},
+{
+                  "color":0xFF666666},
+{
+                  "color":0xFFE4E4E4},
+{
+                  "color":0xFFE4E4E4}]},
+            "location":{
+              "x":182,
+              "y":190},
+            "size":{
+              "width":10,
+              "height":10}},
+          "adaptiveStyles":{
+},
+          "objects":[{
+              "id":"f4ee937ccca648338ce5e6bc670dd721",
+              "label":"",
+              "isContained":true,
+              "type":"richTextPanel",
+              "styleType":"paragraph",
+              "visible":true,
+              "style":{
+                "fill":{
+                  "fillType":"linearGradient",
+                  "colors":[{
+                      "color":0xFF666666},
+{
+                      "color":0xFF666666},
+{
+                      "color":0xFFE4E4E4},
+{
+                      "color":0xFFE4E4E4}]},
+                "location":{
+                  "x":182,
+                  "y":190},
+                "size":{
+                  "width":10,
+                  "height":10}},
+              "adaptiveStyles":{
+}}],
+          "images":{
+            "normal~":"images/radar_5_clubs/u26.png"}}]}},
+  "masters":{
+},
+  "objectPaths":{
+    "c0dead2cc7d4429e8531bb33d3be96eb":{
+      "scriptId":"u0"},
+    "b3a952af328b4b2bafcdb855bc0df698":{
+      "scriptId":"u1"},
+    "3219bfbd8ac449459103f786a2ff096b":{
+      "scriptId":"u2"},
+    "f8f5493a28084ffb98f88b48046efc80":{
+      "scriptId":"u3"},
+    "701d95bd401e41cb95bff3bd1bf24f72":{
+      "scriptId":"u4"},
+    "69c2206051cf48c1a2b353a7613d841c":{
+      "scriptId":"u5"},
+    "fc84cc541e1c47b390b2d7ddcc6ffc64":{
+      "scriptId":"u6"},
+    "d948da9c5a3d468e83095b28afd21c53":{
+      "scriptId":"u7"},
+    "8d9463d325b74e44bcd509ccc654f3a2":{
+      "scriptId":"u8"},
+    "09140cad99cb42dca49dd8873d24a9d3":{
+      "scriptId":"u9"},
+    "18baa9077656497ea117edab0f782f6b":{
+      "scriptId":"u10"},
+    "cc239350ff4f485e80e80f75fa5fc9e7":{
+      "scriptId":"u11"},
+    "b167a691e6984b2eaf9f52b7f02ad0ad":{
+      "scriptId":"u12"},
+    "69dafa4b54ee4958b5d66660e4721bdf":{
+      "scriptId":"u13"},
+    "88bc641cbc5945b197240c152d8f0ac3":{
+      "scriptId":"u14"},
+    "b6cd535a554640e58b7b201d6e9de217":{
+      "scriptId":"u15"},
+    "f933fb48492644549ddbde2d820a3cbc":{
+      "scriptId":"u16"},
+    "5fc247c15914470b92b0f38d423c9d46":{
+      "scriptId":"u17"},
+    "e715bbe8e0a545a38694c7666d3f9a9e":{
+      "scriptId":"u18"},
+    "152a9d422c964ed78b57002a9ac08b00":{
+      "scriptId":"u19"},
+    "fda714022c9245a48a1b13dafb67a782":{
+      "scriptId":"u20"},
+    "ebbe733e27244876bf990d31bbcca2a4":{
+      "scriptId":"u21"},
+    "81152a0dc61a403e9a35077966af8705":{
+      "scriptId":"u22"},
+    "2bb958b7f3554d2d9cfca9079eb7b0a0":{
+      "scriptId":"u23"},
+    "a77a390ecb7f495b8d92ddaf590a9f1f":{
+      "scriptId":"u24"},
+    "3f90cef2f83f46db9cbf5b47156e0a17":{
+      "scriptId":"u25"},
+    "0a175478ed1a4c31b01a73bc04631594":{
+      "scriptId":"u26"},
+    "1e190113736645ba8c5a273a33bb8043":{
+      "scriptId":"u27"},
+    "593109f7f93b43eb9127cf7e19b7fd62":{
+      "scriptId":"u28"},
+    "268d86d2cf5743e696af5a41d194c25d":{
+      "scriptId":"u29"},
+    "f963d95faaf546d7bd5a87f547f49fd2":{
+      "scriptId":"u30"},
+    "b9978a1ef6b6402a8eb64e98318648f5":{
+      "scriptId":"u31"},
+    "506620837a3848ec8b5df7ca86c0d9cb":{
+      "scriptId":"u32"},
+    "61c719e5b7384dcc8bf228898c0d6888":{
+      "scriptId":"u33"},
+    "f5d30d772c1f4a419b59260dec4d391b":{
+      "scriptId":"u34"},
+    "869f298dcef8476fbe796518382f59ac":{
+      "scriptId":"u35"},
+    "dfce70206301433e88f8533f5bcfdae2":{
+      "scriptId":"u36"},
+    "39afd7391e764706a4d40924bf769c36":{
+      "scriptId":"u37"},
+    "2593fbfc268d4ad089689e3f8d0625f1":{
+      "scriptId":"u38"},
+    "a6107d6895dd4d748ffbe6391a18137d":{
+      "scriptId":"u39"},
+    "c5c348f313994d89baec88fd22618ad2":{
+      "scriptId":"u40"},
+    "a7c1d35adbc949fb83deb250ea0243d0":{
+      "scriptId":"u41"},
+    "060ad99272ef4d119afa213f797af8da":{
+      "scriptId":"u42"},
+    "2efc6f98bc8848e6990d553341a77f76":{
+      "scriptId":"u43"},
+    "2d1993a4a4c44a89b337abc6c6b08485":{
+      "scriptId":"u44"},
+    "1599a596cbb9482680fb705157be78d8":{
+      "scriptId":"u45"},
+    "00789b8622ca43eb9ed766bd9ae38a07":{
+      "scriptId":"u46"},
+    "08720d1d3c9f4cf3b299dbc6eec7c2a7":{
+      "scriptId":"u47"},
+    "390519a7e7b34a848b3aa8bd104680d5":{
+      "scriptId":"u48"},
+    "4367734127b944bc94b08c3d03c472b3":{
+      "scriptId":"u49"},
+    "f48edfb6b1a84cb4809d242798a843c4":{
+      "scriptId":"u50"},
+    "f4ee937ccca648338ce5e6bc670dd721":{
+      "scriptId":"u51"}}});
