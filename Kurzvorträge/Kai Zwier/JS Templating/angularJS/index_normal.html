@@ -1,0 +1,121 @@
+<html>
+<head>
+    <title>AngularJS Dynamic Template</title>
+	<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,500,300">
+	<link type="text/css" href="css/layout.css" rel="stylesheet">
+</head>
+<body ng-app="myApp" class="ng-scope">
+<div class="innerWrap">
+<article class="col12">
+<h1 id="4">Produkte</h1>
+            <div class="fill">
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. </p>
+            </div>
+</article>
+</div>
+<div ng-controller="ProductCtrl" id="container" class="ng-scope">
+    <!-- ngRepeat: product in products --><div ng-repeat="product in products" class="innerWrap ng-scope">
+		<div class="imgWrap col2">
+			<img alt="JavaScript: Grundlagen, Programmierung, Praxis - inkl. HTML5, JavaScript-Frameworks, jQuery, OOP" src="http://ecx.images-amazon.com/images/I/51WeHq9xNhL._AA160_.jpg">
+		</div>
+		<div class="description col10">
+			<h3 class="ng-binding">JavaScript: Grundlagen, Programmierung, Praxis - inkl. HTML5, JavaScript-Frameworks, jQuery, OOP</h3>
+			<p><strong class="ng-binding">39,90 EUR</strong></p>
+		</div>
+	</div><div ng-repeat="product in products" class="innerWrap ng-scope">
+		<div class="imgWrap col2">
+			<img alt="JavaScript: The Definitive Guide (Definitive Guides)" src="http://ecx.images-amazon.com/images/I/51WD-F3GobL._AA160_.jpg">
+		</div>
+		<div class="description col10">
+			<h3 class="ng-binding">JavaScript: The Definitive Guide (Definitive Guides)</h3>
+			<p><strong class="ng-binding">31,95 EUR</strong></p>
+		</div>
+	</div><div ng-repeat="product in products" class="innerWrap ng-scope">
+		<div class="imgWrap col2">
+			<img alt="Thinking in JavaScript" src="http://ecx.images-amazon.com/images/I/81L7jbzA%2BbL._SL1500_.jpg">
+		</div>
+		<div class="description col10">
+			<h3 class="ng-binding">Thinking in JavaScript</h3>
+			<p><strong class="ng-binding">10,00 EUR</strong></p>
+		</div>
+	</div><div ng-repeat="product in products" class="innerWrap ng-scope">
+		<div class="imgWrap col2">
+			<img alt="JavaScript - Das umfassende Referenzwerk" src="http://ecx.images-amazon.com/images/I/51atDdT%2BAYL.jpg">
+		</div>
+		<div class="description col10">
+			<h3 class="ng-binding">JavaScript - Das umfassende Referenzwerk</h3>
+			<p><strong class="ng-binding">54,90 EUR</strong></p>
+		</div>
+	</div><div ng-repeat="product in products" class="innerWrap ng-scope">
+		<div class="imgWrap col2">
+			<img alt="JavaScript: Einf&amp;amp;hrung, Programmierung und Referenz" src="http://ecx.images-amazon.com/images/I/418MC4E%2BhsL._AA160_.jpg">
+		</div>
+		<div class="description col10">
+			<h3 class="ng-binding">JavaScript: Einf&amp;amp;hrung, Programmierung und Referenz</h3>
+			<p><strong class="ng-binding">39,30 EUR</strong></p>
+		</div>
+	</div><div ng-repeat="product in products" class="innerWrap ng-scope">
+		<div class="imgWrap col2">
+			<img alt="JavaScript - kurz &amp;amp; gut" src="http://ecx.images-amazon.com/images/I/51vvlw4EAYL._AA160_.jpg">
+		</div>
+		<div class="description col10">
+			<h3 class="ng-binding">JavaScript - kurz &amp;amp; gut</h3>
+			<p><strong class="ng-binding">14,90 EUR</strong></p>
+		</div>
+	</div><div ng-repeat="product in products" class="innerWrap ng-scope">
+		<div class="imgWrap col2">
+			<img alt="JavaScript and HTML5 Now" src="http://ecx.images-amazon.com/images/I/51rvw49RejL._AA160_.jpg">
+		</div>
+		<div class="description col10">
+			<h3 class="ng-binding">JavaScript and HTML5 Now</h3>
+			<p><strong class="ng-binding">5,00 EUR</strong></p>
+		</div>
+	</div><div ng-repeat="product in products" class="innerWrap ng-scope">
+		<div class="imgWrap col2">
+			<img alt="Einstieg in JavaScript (Galileo Computing)" src="http://ecx.images-amazon.com/images/I/51LoO9k3NiL._AA160_.jpg">
+		</div>
+		<div class="description col10">
+			<h3 class="ng-binding">Einstieg in JavaScript (Galileo Computing)</h3>
+			<p><strong class="ng-binding">24,90 EUR</strong></p>
+		</div>
+	</div><div ng-repeat="product in products" class="innerWrap ng-scope">
+		<div class="imgWrap col2">
+			<img alt="Schroedinger lernt HTML5, CSS3 und JavaScript: Das etwas andere Fachbuch (Galileo Computing)" src="http://ecx.images-amazon.com/images/I/61SlKyzaMSL._AA160_.jpg">
+		</div>
+		<div class="description col10">
+			<h3 class="ng-binding">Schroedinger lernt HTML5, CSS3 und JavaScript: Das etwas andere Fachbuch (Galileo Computing)</h3>
+			<p><strong class="ng-binding">44,90 EUR</strong></p>
+		</div>
+	</div><div ng-repeat="product in products" class="innerWrap ng-scope">
+		<div class="imgWrap col2">
+			<img alt="JavaScript and JQuery: Interactive Front-End Web Development" src="http://ecx.images-amazon.com/images/I/41DJtQp8RoL._AA160_.jpg">
+		</div>
+		<div class="description col10">
+			<h3 class="ng-binding">JavaScript and JQuery: Interactive Front-End Web Development</h3>
+			<p><strong class="ng-binding">33,88 EUR</strong></p>
+		</div>
+	</div><div ng-repeat="product in products" class="innerWrap ng-scope">
+		<div class="imgWrap col2">
+			<img alt="JavaScript effektiv: 68 Dinge, die ein guter JavaScript-Entwickler wissen sollte" src="http://ecx.images-amazon.com/images/I/41o9tTvRFtL._AA160_.jpg">
+		</div>
+		<div class="description col10">
+			<h3 class="ng-binding">JavaScript effektiv: 68 Dinge, die ein guter JavaScript-Entwickler wissen sollte</h3>
+			<p><strong class="ng-binding">29,90 EUR</strong></p>
+		</div>
+	</div><div ng-repeat="product in products" class="innerWrap ng-scope">
+		<div class="imgWrap col2">
+			<img alt="JavaScript - Das umfassende Training" src="http://ecx.images-amazon.com/images/I/51TegM9EExL._AA160_.jpg">
+		</div>
+		<div class="description col10">
+			<h3 class="ng-binding">JavaScript - Das umfassende Training</h3>
+			<p><strong class="ng-binding">36,99 EUR</strong></p>
+		</div>
+	</div>
+</div>
+
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/angular.min.js" type="text/javascript"></script>
+    <script src="js/app.js" type="text/javascript"></script>
+
+
+</body></html>
