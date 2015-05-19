@@ -75,9 +75,31 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         controller: 'AccountCtrl'
       }
     }
-  });
+  })
+
+
+
+
+  .state('tab.radar', {
+      url: '/radar',
+      views: {
+        'tab-radar': {
+          templateUrl: 'templates/tab-radar.html',
+          controller: 'RadarCtrl'
+        }
+      }
+    })
+    .state('tab.radar-detail', {
+      url: '/radar/:clubId',
+      views: {
+        'tab-radar': {
+          templateUrl: 'templates/radar-detail.html',
+          controller: 'RadarDetailCtrl'
+        }
+      }
+    });
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/tab/dash');
+  $urlRouterProvider.otherwise('/tab/radar');
 
 });
