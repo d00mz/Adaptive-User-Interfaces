@@ -1,6 +1,7 @@
 var anzahl = 5
 , request = require('request')
 , fs = require('fs-extra')
+, Club = require('../models/club')
 
 
 
@@ -99,7 +100,19 @@ var recommendClubs = function(user){
 
 var getDetails = function (req,res){
 	res.send('getDetails function').status(200).end();
-}
+};
+
+var getAllClubs = function (req,res){
+	Club.find({}, function(err, club) {
+		console.log(err, club);
+		if (err) { console.log(err) }
+		if (!club) {
+			res.status(404).end();
+		} else {
+			res.send(club).status(200).end();
+		}
+	});
+};
 
 /**
  * getClubs function
@@ -125,6 +138,7 @@ var helloworld = function(req,res){
 
 module.exports = {
 	getDetails : getDetails,
+	getAllClubs : getAllClubs,
 	getRecommendedClubs : getRecommendedClubs,
 	helloworld : helloworld
 }

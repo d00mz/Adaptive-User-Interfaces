@@ -1,23 +1,22 @@
 var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
 
-var ClubSchema = new Schema({
+var ClubSchema = mongoose.Schema({
 	name: String,
 	trait1: Number,
 	trait2: Number,
 	trait3: Number,
 	trait4: Number,
 	trait5: Number,
+	trait6: Number,
+	trait7: Number,
 	size: Number,
+	img: String,
+	description: String,
 	location: [Number, Number]
 });
 
 
-ClubSchema.statics = {
-	load: function(id, cb) {
-		this.findOne({_id : id}).exec(cb);
-	}
-};
+var Club = mongoose.model('Clubs', ClubSchema);
+module.exports = Club;
 
-mongoose.model('Club', ClubSchema);
 
