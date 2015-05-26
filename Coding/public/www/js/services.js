@@ -72,7 +72,7 @@ angular.module('starter.services', [])
     },
     get: function(clubId) {
       for (var i = 0; i < clubs.length; i++) {
-        if (clubs[i].id === parseInt(clubId)) {
+        if (clubs[i]._id == clubId) {
           return clubs[i];
         }
       }

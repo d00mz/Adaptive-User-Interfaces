@@ -76,10 +76,36 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     }
   })
+  .state('tab.account-update', {
+    url: '/account/update',
+    views: {
+      'tab-account': {
+        templateUrl: 'templates/tab-account-update.html',
+        controller: 'AccountCtrl'
+      }
+    }
+  })
 
 
 
-
+ .state('tab.clubliste', {
+      url: '/list',
+      views: {
+        'tab-list': {
+          templateUrl: 'templates/tab-list.html',
+          controller: 'ClublistCtrl'
+        }
+      }
+    })
+    .state('tab.clubliste-detail', {
+      url: '/list/:clubId',
+      views: {
+        'tab-list': {
+          templateUrl: 'templates/radar-detail.html',
+          controller: 'RadarDetailCtrl'
+        }
+      }
+    })
   .state('tab.radar', {
       url: '/radar',
       views: {
