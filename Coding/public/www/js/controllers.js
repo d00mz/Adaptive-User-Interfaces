@@ -55,14 +55,15 @@ angular.module('starter.controllers', [])
 			marker[i] = new google.maps.Marker({
 				position: new google.maps.LatLng(clubs[i].location[0],clubs[i].location[1]),
 				map: map,
+				id: clubs[i]._id,
 				title: clubs[i].name
 			});
 
 			google.maps.event.addListener(marker[i], 'click', function(e) {
 				console.log($location);
-				
+				var _clubID = this.id;
 				$rootScope.$apply(function() {
-					$location.path('/tab/radar/5468f71ec894718ed43ec6e0');
+					$location.path('/tab/radar/' + _clubID);
 				});
 			});
 		}
