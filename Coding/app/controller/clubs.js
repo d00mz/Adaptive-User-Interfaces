@@ -131,8 +131,16 @@ var getRecommendedClubs = function(req,res){
 
 var helloworld = function(req,res){
 	console.log('gude');
-	
-	res.send('message').status(200).end();
+	Club.findOne({ name: 'Herkules' }, function(err, user) {
+      if (err) { console.log(err) }
+      	console.log(err,user);
+      if (!user) {
+        res.status(404).end();
+      }else {
+      	res.send(user).status(200).end();
+      }
+    });
+	//res.send('message').status(200).end();
 }
 
 
