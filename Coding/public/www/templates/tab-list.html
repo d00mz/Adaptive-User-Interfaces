@@ -1,0 +1,19 @@
+  <ion-content>
+	<div class="list">
+
+	<div class="item item-input-inset">
+	<label class="item-input-wrapper">
+	<input type="text" placeholder="Suchen">
+	</label>
+	</div>
+
+	</div>
+     <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="club in clubs" type="item-text-wrap" href="#/tab/list/{{club._id}}">
+        <h2>{{club.name}}</h2>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
+

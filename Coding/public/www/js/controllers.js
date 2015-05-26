@@ -19,9 +19,9 @@ angular.module('starter.controllers', [])
   };
 })
 
-.controller('RadarCtrl', function($scope, Clubs, $ionicLoading, $compile) {
+.controller('RadarCtrl', function($scope, Clubs, $ionicLoading, $compile, $rootScope, $location) {
 	$scope.clubs = Clubs.all();
-	console.log($scope.clubs,$scope.clubs.length)
+	console.log($scope.clubs,$scope.clubs.length);
 
 	$scope.remove = function(chat) {
 		Chats.remove(chat);
@@ -58,15 +58,12 @@ angular.module('starter.controllers', [])
 				title: clubs[i].name
 			});
 
-
-			infowindow[i] = new google.maps.InfoWindow({
-				content: clubs[i].name
-			});
-
 			google.maps.event.addListener(marker[i], 'click', function(e) {
-				console.log(e);
-				console.log(this);
-				infowindow[i].open(map,marker[i]);
+				console.log($location);
+				
+				$rootScope.$apply(function() {
+					$location.path('/tab/radar/5468f71ec894718ed43ec6e0');
+				});
 			});
 		}
 
@@ -99,6 +96,12 @@ angular.module('starter.controllers', [])
 	};
 
 
+})
+
+
+
+.controller('ClublistCtrl', function($scope, Clubs, $ionicLoading, $compile) {
+	$scope.clubs = Clubs.all();
 })
 
 
