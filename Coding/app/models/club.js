@@ -13,10 +13,10 @@ var ClubSchema = mongoose.Schema({
 	img: String,
 	description: String,
 	location: [Number, Number]
-}, { collection: 'clubs' });
+});
 
 
-var Club = mongoose.model('Clubs', ClubSchema);
+var Club = mongoose.model('Clubs', ClubSchema, 'clubs');
 module.exports = Club;
 
 
