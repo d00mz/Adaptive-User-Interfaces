@@ -133,12 +133,16 @@ angular.module('starter.controllers', [])
 
 
 .controller('CardsCtrl', function($scope, TDCardDelegate) {
-  console.log('CARDS CTRL');
+  //console.log('CARDS CTRL');
   var cardTypes = [
-    { image: 'https://pbs.twimg.com/profile_images/546942133496995840/k7JAxvgq.jpeg' },
-    { image: 'https://pbs.twimg.com/profile_images/514549811765211136/9SgAuHeY.png' },
-    { image: 'https://pbs.twimg.com/profile_images/491995398135767040/ie2Z_V6e.jpeg' },
+    { image: 'http://img.dummy-image-generator.com/buildings/dummy-300x300-NYSkyline-plain.jpg' },
+    { image: 'http://img.dummy-image-generator.com/buildings/dummy-300x300-HongKongSkyline-plain.jpg' },
+    { image: 'http://img.dummy-image-generator.com/buildings/dummy-300x300-Hannover-plain.jpg' },
+    { image: 'http://img.dummy-image-generator.com/buildings/dummy-300x300-City-plain.jpg' },
+    { image: 'http://img.dummy-image-generator.com/buildings/dummy-300x300-Stadium-plain.jpg' }
   ];
+
+  $scope.currentCardSrc = cardTypes[0].image;
 
   $scope.cards = Array.prototype.slice.call(cardTypes, 0);
 
@@ -146,21 +150,22 @@ angular.module('starter.controllers', [])
     var newCard = cardTypes[Math.floor(Math.random() * cardTypes.length)];
     newCard.id = Math.random();
     $scope.cards.push(angular.extend({}, newCard));
+     $scope.currentCardSrc = newCard.image;
   }
 
   // Funktionen die Getriggert werden, wenn Karte nach links oder rechts gezogen wurde
   $scope.cardSwipedLeft = function(index) {
-    console.log('LEFT SWIPE');
+    //console.log('LEFT SWIPE');
     $scope.addCard();
   };
   $scope.cardSwipedRight = function(index) {
-    console.log('RIGHT SWIPE');
+   // console.log('RIGHT SWIPE');
     $scope.addCard();
   };
 
   $scope.cardDestroyed = function(index) {
   	// Karte wurde final nach links oder rechts gezogen
-  	console.log('card weggeschmissen', index);
+  	//console.log('card weggeschmissen', index);
 
     $scope.cards.splice(index, 1);
   };

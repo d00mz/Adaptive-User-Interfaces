@@ -133,7 +133,7 @@
       }
 
       var angle = Math.atan(e.gesture.deltaX / e.gesture.deltaY);
-      console.log('Finishing at angle', angle, 'and velocity', e.gesture.velocityX, e.gesture.velocityY);
+      //console.log('Finishing at angle', angle, 'and velocity', e.gesture.velocityX, e.gesture.velocityY);
 
       var dir = this.thresholdAmount < 0 ? -1 : 1;
       var targetX;
@@ -152,13 +152,13 @@
       var duration = 0.3 - Math.min(Math.max(Math.abs(e.gesture.velocityX)/10, 0.05), 0.2);
       
       //console.log(e.gesture.velocityX/2, duration);
-      console.log('Duration', duration);
+      //console.log('Duration', duration);
 
       ionic.requestAnimationFrame(function() {
         self.el.style.transform = self.el.style.webkitTransform = 'translate3d(' + targetX + 'px, ' + targetY + 'px,0) rotate(' + self.rotationAngle + 'rad)';
         self.el.style.transition = self.el.style.webkitTransition = 'all ' + duration + 's ease-in-out';
       });
-      console.log('DO DRAG END');
+      //console.log('DO DRAG END');
 
       //this.onSwipe && this.onSwipe();
 
@@ -182,7 +182,7 @@
           self._transformOriginLeft();
         }
         */
-        console.log('DRAG START');
+        //console.log('DRAG START');
         ionic.requestAnimationFrame(function() { self._doDragStart(e) });
       }, this.el);
 
@@ -211,7 +211,7 @@
       var width = this.el.offsetWidth;
       var point = window.innerWidth / 2 + this.rotationDirection * (width / 2)
       var distance = Math.abs(point - e.gesture.touches[0].pageX);// - window.innerWidth/2);
-      console.log(distance);
+      //console.log(distance);
 
       this.touchDistance = distance * 10;
     },
@@ -267,12 +267,12 @@
             onPartialSwipe: function(amt) {
               swipeCards.partial(amt);
               $timeout(function() {
-                $scope.leftTextOpacity = {
-                  'opacity': amt > 0 ? amt : 0
-                };
-                $scope.rightTextOpacity = {
-                  'opacity': amt < 0 ? Math.abs(amt) : 0
-                };
+                // $scope.leftTextOpacity = {
+                //   'opacity': amt > 0 ? amt : 0
+                // };
+                // $scope.rightTextOpacity = {
+                //   'opacity': amt < 0 ? Math.abs(amt) : 0
+                // };
 
                 $scope.onPartialSwipe({amt: amt});
               });
@@ -293,8 +293,8 @@
               });
             },
             onSnapBack: function(startX, startY, startRotation) {
-              var leftText = el.querySelector('.yes-text');
-              var rightText = el.querySelector('.no-text');
+              // var leftText = el.querySelector('.yes-text');
+              // var rightText = el.querySelector('.no-text');
 
               var animation = collide.animation({
                 // 'linear|ease|ease-in|ease-out|ease-in-out|cubic-bezer(x1,y1,x2,y2)',
@@ -315,8 +315,8 @@
               .on('step', function(v) {
                 //Have the element spring over 400px
                 el.style.transform = el.style.webkitTransform = 'translate3d(' + (startX - startX*v) + 'px, ' + (startY - startY*v) + 'px, 0) rotate(' + (startRotation - startRotation*v) + 'rad)';
-                rightText.style.opacity = Math.max(rightText.style.opacity - rightText.style.opacity * v, 0);
-                leftText.style.opacity = Math.max(leftText.style.opacity - leftText.style.opacity * v, 0);
+                // rightText.style.opacity = Math.max(rightText.style.opacity - rightText.style.opacity * v, 0);
+                // leftText.style.opacity = Math.max(leftText.style.opacity - leftText.style.opacity * v, 0);
               })
               .start();
               /*
@@ -350,7 +350,7 @@
 
         var sortCards = function() {
           existingCards = $element[0].querySelectorAll('td-card');
-          console.log('Existing', existingCards);
+          //console.log('Existing', existingCards);
 
           for(i = 0; i < existingCards.length; i++) {
             card = existingCards[i];
@@ -367,13 +367,15 @@
         });
 
         var bringCardUp = function(card, amt, max) {
+          //console.log(card,card.style.transform,card.style.webkitTransform);
           var position, top, newTop;
           position = card.style.transform || card.style.webkitTransform;
+
           top = parseInt(position && position.split(',')[1] || 0);
           //console.log(window.getComputedStyle(secondCard));
           newTop = Math.max(0, Math.min(max, max - (max * Math.abs(amt))));
           //console.log(top);
-          console.log(newTop);
+          //console.log(newTop);
           card.style.transform = card.style.webkitTransform = 'translate3d(0, ' + newTop + 'px, 0)';
         };
 

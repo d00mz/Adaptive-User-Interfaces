@@ -1,13 +1,59 @@
 <ion-view view-title="Cards">
   <ion-content>
-	<td-cards>
+  <div class="bgCards" style="background-image: url('{{currentCardSrc}}');"></div>
+  
+  <span class="yes ion-ios-checkmark-empty" data-tags="success, confirmed, on, finished, complete" data-pack="ios">
+    <span class="roundBorderRight"></span>
+  </span>
+  
+  <span class="nope ion-ios-close-empty" data-tags="delete, remove, trash, end, stop, x" data-pack="ios">
+    <span class="roundBorderLeft"></span>
+  </span>
+  <td-cards>
         <td-card ng-repeat="card in cards" on-destroy="cardDestroyed($index)" on-swipe-left="cardSwipedLeft($index)" on-swipe-right="cardSwipedRight($index)" on-partial-swipe="cardPartialSwipe(amt)" class="card-{{$index}}">
           <div class="image">
-            <div class="no-text">NOPE</div>
-            <img ng-src="{{card.image}}">
-            <div class="yes-text">LIKE</div>
-          </div>
+<!--             <div class="no-text">NOPE</div>
+ -->            <img ng-src="{{card.image}}">
+<!--             <div class="yes-text">LIKE</div>
+ -->          </div>
         </td-card>
       </td-cards>
   </ion-content>
 </ion-view>
+<script type="text/javascript">
+  if($().is(".card-")){
+    
+    $("span.yes").animate({
+      "color": "rgb(0,225,50)"
+    }, "fast", function() {
+      $("span.yes").animate({
+        "color": "rgb(255,225,255)"
+      }, "fast"
+    );
+
+    $("span.nope").animate({
+      "color": "rgb(255,50,50)"
+    }, "fast", function() {
+      $("span.yes").animate({
+        "color": "rgb(255,225,255)"
+      }, "fast"
+    );
+
+    $("span.roundBorderLeft").animate({
+      "border-color": "rgb(255,50,50)"
+    }, "fast", function() {
+      $("span.yes").animate({
+        "color": "rgb(255,225,255)"
+      }, "fast"
+    );
+
+    $("span.roundBorderRight").animate({
+      "border-color": "rgb(0,225,50)"
+    }, "fast", function() {
+      $("span.yes").animate({
+        "color": "rgb(255,225,255)"
+      }, "fast"
+    );
+
+  }
+</script>

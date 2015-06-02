@@ -1,3 +1,19 @@
+.bgCards {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	-webkit-filter: blur(15px);
+	-moz-filter: blur(15px);
+	-o-filter: blur(15px);
+	-ms-filter: blur(15px);
+	filter: blur(15px);
+}
 td-cards {
 	display: block;
 }
@@ -5,7 +21,7 @@ td-card {
 	display: block;
 	position: absolute;
 	left: 50%;
-	margin-top: 80px;
+	margin-top: 30px;
 	margin-bottom: 40px;
 	margin-left: -150px;
 	width: 300px;
@@ -18,14 +34,54 @@ td-card .image {
 	position: relative;
 }
 td-card img {
-	border-radius: 6px;
+	border-radius: 3px;
 	max-width: 100%;
 	max-height: 100%;
 }
-.yes-text {
+span.yes,
+span.nope {
+	position: absolute;
+	top: 350px;
+	z-index: 999;
+	border-radius: 4px;
+    display: inline-block;
+    font-size: 50px;
+    font-weight: normal;
+    text-align: center;
+    color: #fff;
+}
+span.yes {
+	color: rgb(0,225,50);
+	right: 10px;
+}
+span.nope {
+	color: rgb(255,50,50);
+	left: 10px;
+}
+span.roundBorderLeft,
+span.roundBorderRight {
+	border: 1px solid #fff;
+	width: 100px;
+	height: 100px;
+	border-radius: 100px;
+	display: inline-block;
+	position: absolute;
+}
+span.roundBorderLeft {
+	border-color: rgb(255,50,50);
+	left: -45px;
+	top: -25px;
+}
+span.roundBorderRight {
+	border-color: rgb(0,225,50);
+	right: -45px;
+	top: -25px;
+}
+/*.yes-text {
 	position: absolute;
 	top: 10px;
 	left: 10px;
+	z-index: 999;
 	font-size: 30px;
 	color: rgb(111, 250, 111);
 	opacity: 0;
@@ -34,10 +90,11 @@ td-card img {
 	position: absolute;
 	top: 10px;
 	right: 10px;
+	z-index: 999;
 	font-size: 30px;
 	color: rgb(255, 115, 115);
 	opacity: 0;
-}
+}*/
 .fade {
 	-webkit-transition: 0.2s opacity linear;
 	transition: 0.2s opacity linear;
