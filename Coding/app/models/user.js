@@ -1,6 +1,12 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
+
+var validateEmail = function(email) {
+    var re = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    return re.test(email)
+};
+
 var UserSchema = new Schema({
 	name: String,
 	trait1: Number,
@@ -12,16 +18,18 @@ var UserSchema = new Schema({
 	location: [Number, Number],
 	lastLogin: {
 		type: Date,
-		defaut: Date.now
-	}
+		default: Date.now
+	},
+	email: {
+        type: String,
+        trim: true,
+        unique: true,
+        required: 'Email address is required',
+        validate: [validateEmail, 'Please fill a valid email address'],
+        match: [/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/, 'Please fill a valid email address']
+    },
+    password: String
 });
 
-
-UserSchema.statics = {
-	load: function(id, cb) {
-		this.findOne({_id : id}).exec(cb);
-	}
-};
-
-mongoose.model('User', UserSchema);
-
+var User = mongoose.model('Users', UserSchema, 'users');
+module.exports = User;

@@ -21,6 +21,17 @@ angular.module('starter.controllers', [])
 
 .controller('RadarCtrl', function($scope, Clubs, $ionicLoading, $compile, $rootScope, $location) {
 	$scope.clubs = Clubs.all();
+
+	$http.get('/getdetails?id='+$stateParams.clubId).
+	success(function(data, status, headers, config) {
+		console.log(data);
+	}).
+	error(function(data, status, headers, config) {
+	
+	});
+
+
+
 	console.log($scope.clubs,$scope.clubs.length);
 
 	$scope.remove = function(chat) {
