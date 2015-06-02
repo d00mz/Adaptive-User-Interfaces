@@ -106,8 +106,18 @@ angular.module('starter.controllers', [])
 })
 
 
-.controller('RadarDetailCtrl', function($scope, $stateParams, Clubs) {
+.controller('RadarDetailCtrl', function($scope, $stateParams, $http, Clubs) {
   $scope.club = Clubs.get($stateParams.clubId);
+  $http.get('/getdetails?id='+$stateParams.clubId).
+  success(function(data, status, headers, config) {
+  	console.log(data);
+    // this callback will be called asynchronously
+    // when the response is available
+  }).
+  error(function(data, status, headers, config) {
+    // called asynchronously if an error occurs
+    // or server returns response with an error status.
+  });
 })
 
 

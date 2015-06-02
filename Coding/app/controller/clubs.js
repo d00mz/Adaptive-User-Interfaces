@@ -2,6 +2,7 @@ var anzahl = 5
 , request = require('request')
 , fs = require('fs-extra')
 , Club = require('../models/club')
+, ObjectId = require('mongoose').Types.ObjectId; 
 
 
 
@@ -99,12 +100,26 @@ var recommendClubs = function(user){
 
 
 var getDetails = function (req,res){
-	res.send('getDetails function').status(200).end();
+
+	Club.findOne({ _id: new ObjectId(req.query.id) }, function(err, clubData) {
+		if (err) { console.log(err) }			
+		console.log(err,clubData);
+
+		if (!clubData) {
+			res.status(404).end();
+		} else {
+			res.send(clubData).status(200).end();
+		}
+
+	});
+	//res.send('message').status(200).end();
 };
 
 var getAllClubs = function (req,res){
 	Club.find({}, function(err, club) {
 		console.log(err, club);
+
+
 		if (err) { console.log(err) }
 		if (!club) {
 			res.status(404).end();
@@ -131,15 +146,17 @@ var getRecommendedClubs = function(req,res){
 
 var helloworld = function(req,res){
 	console.log('gude');
-	Club.findOne({ name: 'Herkules' }, function(err, user) {
-      if (err) { console.log(err) }
-      	console.log(err,user);
-      if (!user) {
-        res.status(404).end();
-      }else {
-      	res.send(user).status(200).end();
-      }
-    });
+	console.log(req.query);
+
+	Club.geoNear(8.655637, 49.873239, {$maxDistance: req.query.distance}, function(err, result) {
+		if(err) return console.dir(err)
+		console.log(result);
+		if (!result) {
+			res.status(404).end();
+		} else {
+			res.send(result).status(200).end();
+		}
+	});
 	//res.send('message').status(200).end();
 }
 
