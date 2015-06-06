@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="mobile-web-app-capable" content="yes">
+		<title>AUI Kaltstart</title>
+		<link rel="stylesheet" type="text/css" href="reset.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+	</head>
+	<body onload=" setTimeout( function(){ window.scrollTo(0, 1) }, 0); ">
+		<div id="or"><span>OR</span></div>
+
+		<div class="clubImg" id="top" style="background-image:url(club1.jpg);"></div><!-- /.clubImg -->
+
+		<div id="divideLeft"></div><!-- /#divideLeft -->
+		<div id="divideRight"></div><!-- /#divideRight -->
+
+		<div class="clubImg" id="bottom" style="background-image:url(club2.jpg);"></div><!-- /.clubImg -->
+
+		<!-- jQuery -->
+		<script src="http://code.jquery.com/jquery.js"></script>
+		<script type="text/javascript" src="jquery.easing.js"></script>
+		<script type="text/javascript" src="jquery.touch.js"></script>
+		<script type="text/javascript">
+			$( document ).ready(function() {
+				$('#top').bind('tap', function() { 
+					$(this).addClass('chosen');
+
+					$('#or,#divideLeft,#divideRight').fadeOut('fast');
+
+					$(this).delay(150).animate( {"height": "100%" }, 300, 'easeOutBack');
+
+					$('#bottom').delay(150).animate( {
+						"height": "0%"
+					}, 300, 'easeOutBack');
+
+					
+
+				});
+
+				$('#bottom').bind('tap', function() { 
+					$(this).addClass('chosen');
+					
+					$('#or,#divideLeft,#divideRight').fadeOut('fast');
+
+					$(this).delay(150).animate( {"height": "100%" }, 300, 'easeOutBack');
+
+					$('#top').delay(150).animate( {"height": "0%"}, 300, 'easeOutBack');
+				});
+			});
+		</script>
+	</body>
+</html>
