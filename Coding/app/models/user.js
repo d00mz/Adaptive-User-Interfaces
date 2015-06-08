@@ -14,6 +14,8 @@ var UserSchema = new Schema({
 	trait3: Number,
 	trait4: Number,
 	trait5: Number,
+	trait6: Number,
+	trait7: Number,
 	size: Number,
 	location: [Number, Number],
 	lastLogin: {
@@ -23,8 +25,6 @@ var UserSchema = new Schema({
 	email: {
         type: String,
         trim: true,
-        unique: true,
-        required: 'Email address is required',
         validate: [validateEmail, 'Please fill a valid email address'],
         match: [/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/, 'Please fill a valid email address']
     },
