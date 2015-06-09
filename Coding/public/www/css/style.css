@@ -1,13 +1,50 @@
 /* Empty. Add your own CSS if you like */
 .mapwrapper {
-	width: 200px;
-	height: 200px;
+	width: 250px;
+	height: 250px;
 	border-radius: 50%;
 	margin:0px auto;
 	overflow: hidden;
+	border: 2px solid #50557F;
 }
 
 #map {
 	width: 100%;
 	height: 100%;
+
+}
+
+ion-content {
+	background-color: #15151B;
+}
+
+.gm-style-cc {
+	display: none;
+}
+
+/*#map div.gm-style div {
+	display: none;
+}*/
+
+input[type=text] {
+	position: relative;
+	background: #141316;
+	border: 1px solid #50557f;
+	height: 40px;
+	padding: 0px 20px 0 20px;
+	border-radius: 40px;
+	color: #ff0060;
+	font-size: 15px;
+	outline: none;
+	background-image: url(img/search_icon.png);
+	background-repeat: no-repeat;
+	width: 90%;
+	left: 5%;
+	right: 5%;
+}
+input[type=text]::before {
+	content: "o";
+	font-family: 'app_icons';
+	color: #ff0060;
+	font-size: 16px;
 }

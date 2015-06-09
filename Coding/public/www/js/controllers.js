@@ -38,6 +38,78 @@ angular.module('starter.controllers', [])
 		Chats.remove(chat);
 	}
 
+	//Map Style
+
+	var style = [
+	{
+	  	"stylers": [{
+	    	"color": "#15151B"
+	  }]
+	},
+	{
+	  	"featureType": "water",
+	  	"stylers": [{
+	    	"color": "#50557F"
+	  }]
+	},
+	{
+	  	"elementType": "labels",
+	  	"stylers": [{
+	    	"visibility": "off"
+	},
+	{
+        "featureType": "road",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "visibility": "on",
+                "color": "#50557F"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "visibility": "on",
+                "color": "#50557F"
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "visibility": "on",
+                "color": "#50557F"
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "geometry.stroke",
+        "stylers": [
+            {
+                "visibility": "on",
+                "color": "#50557F"
+            }
+        ]
+    }
+
+	  ]
+	}];
+
 	function initialize() {
 		console.log('init map');
 		var myLatlng = new google.maps.LatLng(49.8856009,8.6566082);
@@ -45,7 +117,14 @@ angular.module('starter.controllers', [])
 		var mapOptions = {
 			center: myLatlng,
 			zoom: 12,
-			mapTypeId: google.maps.MapTypeId.ROADMAP
+			styles: style,
+			mapTypeId: google.maps.MapTypeId.ROADMAP,
+			disableDefaultUI: true,
+	        scrollwheel: false,
+	        navigationControl: false,
+	        mapTypeControl: false,
+	        scaleControl: false,
+	        draggable: false
 		};
 
 		var map = new google.maps.Map(document.getElementById("map"), mapOptions);
