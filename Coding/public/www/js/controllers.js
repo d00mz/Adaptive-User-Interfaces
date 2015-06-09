@@ -156,6 +156,12 @@ angular.module('starter.controllers', [])
 					$location.path('/tab/radar/' + _clubID);
 				});
 			});
+
+			// google.maps.event.addListener(center, 'click', function(e) {
+			// 	$rootScope.$apply(function() {
+			// 		$location.path('/tab/account');
+			// 	});
+			// });
 		}
 
 		$scope.map = map;
