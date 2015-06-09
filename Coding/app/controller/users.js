@@ -67,6 +67,5 @@ var createUser = function(req,res){
 };
 
 module.exports = {
-	getDetails : getDetails,
 	createUser : createUser
 }

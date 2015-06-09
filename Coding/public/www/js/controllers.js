@@ -19,7 +19,7 @@ angular.module('starter.controllers', [])
   };
 })
 
-.controller('RadarCtrl', function($scope, Clubs, $ionicLoading, $compile, $rootScope, $location, $http) {
+.controller('RadarCtrl', function($scope, Clubs, $ionicLoading, $compile, $rootScope, $location, $http, $stateParams) {
 	$scope.clubs = Clubs.all();
 
 	$http.get('/getdetails?id='+$stateParams.clubId).
