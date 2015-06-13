@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="mobile-web-app-capable" content="yes">
+		<title>AUI Kaltstart</title>
+		<link rel="stylesheet" type="text/css" href="reset.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+	</head>
+	<body onload=" setTimeout( function(){ window.scrollTo(0, 1) }, 0); ">
+
+		<section id="splashscreen">
+			<img src="logo.svg">
+		</section><!-- /#splashscreen -->
+
+		<section id="infosplash">
+			<p>Verrate uns deinen Clubgeschmack mit einem Tip auf die Bilder, die dich am meisten ansprechen.</p>
+			<button id="go">Go</button>
+		</section><!-- /#infosplash -->
+		
+		<section id="kaltstart">
+			<div id="or"><span>OR</span></div>
+
+			<div id="divideLeft"></div><!-- /#divideLeft -->
+			<div id="divideRight"></div><!-- /#divideRight -->
+			
+			<div ng-repeat="club in clubs | filter: XY" class="clubImg" id="top" style="background-image:url('{{currentClub1}}');"></div><!-- /.clubImg -->
+			<div ng-repeat="club in clubs | filter: XY" class="clubImg" id="bottom" style="background-image:url('{{currentClub2}}');"></div><!-- /.clubImg -->
+		</section><!-- /#kaltstart -->
+		<!-- jQuery -->
+		<script src="http://code.jquery.com/jquery.js"></script>
+		<script type="text/javascript" src="jquery.easing.js"></script>
+		<script type="text/javascript" src="jquery.touch.js"></script>
+		<script type="text/javascript">
+			$( document ).ready(function() {
+
+				//splashscreen
+				$("#splashscreen").delay(1250).fadeOut('slow');
+				
+				//infosplash
+				$("#go").click(function(){
+					$("#infosplash").fadeOut('slow');
+				});
+
+				//tap stuff
+				$('#top').bind('tap', function() { 
+					$(this).addClass('chosen');
+
+					$('#or,#divideLeft,#divideRight').fadeOut('fast');
+
+					$(this).delay(150).animate( {"height": "100%" }, 300, 'easeOutBack');
+
+					$('#bottom').delay(150).animate( {"height": "0%"}, 300, 'easeOutBack');
+				});
+
+				$('#bottom').bind('tap', function() { 
+					$(this).addClass('chosen');
+					
+					$('#or,#divideLeft,#divideRight').fadeOut('fast');
+
+					$(this).delay(150).animate( {"height": "100%" }, 300, 'easeOutBack');
+
+					$('#top').delay(150).animate( {"height": "0%"}, 300, 'easeOutBack');
+				});
+			});
+		</script>
+	</body>
+</html>
