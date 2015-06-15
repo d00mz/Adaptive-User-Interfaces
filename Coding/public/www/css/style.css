@@ -49,3 +49,7 @@ input[type=text]::before {
 	color: #ff0060;
 	font-size: 16px;
 }
+
+#location_search {
+
+}

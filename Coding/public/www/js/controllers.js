@@ -111,12 +111,16 @@ angular.module('starter.controllers', [])
 	}];
 
 	function initialize() {
-		console.log('init map');
+
+		var input = document.getElementById('location_search');
+		var autocomplete = new google.maps.places.Autocomplete(input);
+		
+		// console.log('init map');
 		var myLatlng = new google.maps.LatLng(49.8856009,8.6566082);
 
 		var mapOptions = {
 			center: myLatlng,
-			zoom: 12,
+			zoom: 13,
 			styles: style,
 			mapTypeId: google.maps.MapTypeId.ROADMAP,
 			disableDefaultUI: true,
@@ -255,3 +259,5 @@ angular.module('starter.controllers', [])
     $scope.cards.splice(index, 1);
   };
 });
+	
+
