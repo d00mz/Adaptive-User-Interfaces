@@ -142,32 +142,53 @@ angular.module('starter.controllers', [])
 		var marker = new Array();
 		var infowindow = new Array();
 
+		var center_options = {
+          url: 'img/center.png',
+          size: new google.maps.Size(50, 50),
+          origin: new google.maps.Point(0,0),
+          anchor: new google.maps.Point(25, 25)
+        };
+        
+        var center_marker = new google.maps.Marker({
+            position: myLatlng,
+            icon: center_options,
+            map: map
+        });
 
-		for (var i = 0; i < clubs.length; i++){
-			console.log(clubs[i]);
 
-			marker[i] = new google.maps.Marker({
-				position: new google.maps.LatLng(clubs[i].location[0],clubs[i].location[1]),
-				map: map,
-				id: clubs[i]._id,
-				title: clubs[i].name
-			});
 
-			google.maps.event.addListener(marker[i], 'click', function(e) {
-				console.log($location);
-				var _clubID = this.id;
-				$rootScope.$apply(function() {
-					$location.path('/tab/radar/' + _clubID);
+	    setMarkers(map, clubs);
+
+	    function setMarkers(map, clubs) { 
+
+			for (var i = 0; i < clubs.length; i++){
+				console.log(clubs[i]);
+
+				marker[i] = new google.maps.Marker({
+					position: new google.maps.LatLng(clubs[i].location[0],clubs[i].location[1]),
+					map: map,
+					id: clubs[i]._id,
+					title: clubs[i].name
 				});
-			});
 
-			// google.maps.event.addListener(center, 'click', function(e) {
-			// 	$rootScope.$apply(function() {
-			// 		$location.path('/tab/account');
-			// 	});
-			// });
+				google.maps.event.addListener(marker[i], 'click', function(e) {
+					console.log($location);
+					var _clubID = this.id;
+					$rootScope.$apply(function() {
+						$location.path('/tab/radar/' + _clubID);
+					});
+				});
+
+				// google.maps.event.addListener(center, 'click', function(e) {
+				// 	// $rootScope.$apply(function() {
+				// 	// 	$location.path('/tab/account');
+				// 	// });
+				// 	console.log('center wurde geklickt!');
+				// });
+
+			}
 		}
-
+				
 		$scope.map = map;
 	}
 

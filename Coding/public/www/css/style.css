@@ -53,3 +53,7 @@ input[type=text]::before {
 #location_search {
 
 }
+
+h2.ng-binding {
+	color: #FFF;
+}
