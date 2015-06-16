@@ -64,11 +64,15 @@ angular.module('starter.services', [])
               {"_id":"5468f7e8c894718ed43ec6e7","name":"Herkules","trait1":1.2,"trait2":2,"trait3":1.4,"trait4":2,"trait5":2,"size":2.8,"location":[49.874208, 8.651297]}];
 
   return {
-    all: function() {
-      return clubs;
-    },
     recommend: function(){
       return $http.get('/recommendation');
+    },
+    getDetails: function(clubId){
+      return $http.get('/getdetails?id='+clubId);
+    },
+    // OLD
+    all: function() {
+      return clubs;
     },
     remove: function(club) {
       clubs.splice(clubs.indexOf(club), 1);
