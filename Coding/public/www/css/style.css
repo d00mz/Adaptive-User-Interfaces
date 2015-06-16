@@ -57,3 +57,160 @@ input[type=text]::before {
 h2.ng-binding {
 	color: #FFF;
 }
+
+
+
+
+
+
+/* ----- KALTSTART ------ */
+#splashscreen, #infosplash, #kaltstart { height: 100vh;}
+#splashscreen {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	width: 100%;
+	height: 100vh;
+	background: url(bg_stadt.jpg) no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+#splashscreen img {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	width: 350px;
+	height: 350px;
+	margin: -175px 0 0 -175px;
+}
+#infosplash {
+	background: rgba(0,0,0,0.9);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 998;
+	width: 100%;
+	height: 100vh;
+	text-align: center;
+}
+#infosplash button {
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+	border-radius: 100px;
+	background: none;
+	border: 2px solid rgb(222, 39, 105);
+	color: rgb(222, 39, 105);
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+#infosplash button:active {
+	-webkit-box-shadow: inset 0px 1px 3px 2px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: inset 0px 1px 3px 2px rgba(0, 0, 0, 0.4);
+	box-shadow: inset 0px 1px 3px 2px rgba(0, 0, 0, 0.4);
+}
+#infosplash p {
+	text-align: center;
+	color: #fff;
+	margin: 40% auto 50px;
+	line-height: 124%;
+}
+#or {
+	width: 75px;
+	height: 75px;
+	box-sizing: border-box;
+	font-size: 25px;
+	background: rgba(0,0,0,0.65);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 99;
+	margin-top: -38px;
+	margin-left: -38px;
+	border-radius: 100px;
+	text-align: center;
+	padding: 24px 22px 25px 21px;
+	color: rgba(255,255,255,1);
+	border: 1px solid rgb(255,0,96);
+	box-shadow: 0 0 15px rgb(255,0,96);
+	-moz-box-shadow: 0 0 15px rgb(255,0,96);
+	-webkit-box-shadow: 0 0 15px rgb(255,0,96);
+	-o-box-shadow: 0 0 15px rgb(255,0,96);
+	-moz-text-shadow: 0px 0px 5px #fff;
+	-webkit-text-shadow: 0px 0px 5px #fff;
+	-o-text-shadow: 0px 0px 5px #fff;
+	text-shadow: 0px 0px 5px #fff;
+}
+#divideLeft {
+	width: 50%;
+	height: 1px;
+	background: rgb(255,0,96);
+	position: absolute;
+	left: -37px;
+	top: 50%;
+	z-index: 98;
+	box-shadow: 0 0 5px rgb(255,0,96);
+	-moz-box-shadow: 0 0 5px rgb(255,0,96);
+	-webkit-box-shadow: 0 0 5px rgb(255,0,96);
+	-o-box-shadow: 0 0 5px rgb(255,0,96);
+}
+#divideRight {
+	width: 50%;
+	height: 1px;
+	background: rgb(255,0,96);
+	position: absolute;
+	right: -38px;
+	top: 50%;
+	z-index: 98;
+	box-shadow: 0 0 5px rgb(255,0,96);
+	-moz-box-shadow: 0 0 5px rgb(255,0,96);
+	-webkit-box-shadow: 0 0 5px rgb(255,0,96);
+	-o-box-shadow: 0 0 5px rgb(255,0,96);
+}
+.clubImg {
+	position: absolute;
+	width: 100%;
+}
+.clubImg:before{
+    content:'';
+    position:absolute;
+    top:50%;
+    left:0;
+    width:100%;
+    height:0;
+    background:rgba(0,255,0,0.75);
+    z-index:99;
+    opacity: 1;
+
+    -webkit-transition: opacity .5s, top .5s, height .5s, .5s -webkit-transform .5s; 
+    -ms-transition: opacity .5s, top .5s, height .5s, .5s -ms-transform .5s; 
+    transition: opacity .5s, top .5s, height .5s, .5s transform .5s;
+}
+.clubImg.chosen:before{ 
+    height:100%;
+    top:0%;
+    -ms-transform:     scale(1);
+    -webkit-transform: scale(1);
+    transform:         scale(1);
+    opacity: 0;
+}
+#top {
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 50vh;
+	background-position: center center;
+	background-size: 100% auto; 
+	background-repeat: no-repeat;
+}
+#bottom {
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 50vh;
+	background-position: center center;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}

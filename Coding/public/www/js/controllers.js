@@ -9,7 +9,7 @@ angular.module('starter.controllers', [])
 .controller('ChatsCtrl', function($scope, Chats) {
   $scope.chats = Chats.all();
   $scope.remove = function(chat) {
-    Chats.remove(chat);
+	Chats.remove(chat);
   }
 })
 
@@ -19,7 +19,7 @@ angular.module('starter.controllers', [])
 
 .controller('AccountCtrl', function($scope) {
   $scope.settings = {
-    enableFriends: true
+	enableFriends: true
   };
 })
 
@@ -159,104 +159,104 @@ angular.module('starter.controllers', [])
 
 	var style = [
 	{
-	  	"stylers": [{
-	    	"color": "#15151B"
+		"stylers": [{
+			"color": "#15151B"
 	  }]
 	},
 	{
-       "featureType": "road.local",
-       "elementType": "geometry.fill",
-       "stylers": [
-           {
+	   "featureType": "road.local",
+	   "elementType": "geometry.fill",
+	   "stylers": [
+		   {
 
-               "color": "#50557F"
-           }
-       ]
+			   "color": "#50557F"
+		   }
+	   ]
    },
    {
-       "featureType": "road.local",
-       "elementType": "geometry.stroke",
-       "stylers": [
-           {
-           		"visibility": "on",
-                "color": "#50557F"
-           }
-       ]
+	   "featureType": "road.local",
+	   "elementType": "geometry.stroke",
+	   "stylers": [
+		   {
+				"visibility": "on",
+				"color": "#50557F"
+		   }
+	   ]
    },
    {
-       "featureType": "road.highway",
-       "elementType": "geometry.fill",
-       "stylers": [
-           {
-               "visibility": "on",
-               "color": "#50557F"
-           }
-       ]
+	   "featureType": "road.highway",
+	   "elementType": "geometry.fill",
+	   "stylers": [
+		   {
+			   "visibility": "on",
+			   "color": "#50557F"
+		   }
+	   ]
    },
    {
-       "featureType": "road.highway",
-       "elementType": "geometry.stroke",
-       "stylers": [
-           {
-               "visibility": "on",
-               "color": "#50557F"
-           }
-       ]
+	   "featureType": "road.highway",
+	   "elementType": "geometry.stroke",
+	   "stylers": [
+		   {
+			   "visibility": "on",
+			   "color": "#50557F"
+		   }
+	   ]
    },
    {
-        "featureType": "road.arterial",
-        "elementType": "geometry.fill",
-        "stylers": [
-            {
-                "color": "#50557F"
-            },
-            {
-                "visibility": "on"
-            }
-        ]
-    },
-    {
-        "featureType": "road.arterial",
-        "elementType": "geometry.stroke",
-        "stylers": [
-            {
-                "color": "#50557F"
-            },
-            // {
-            //     "lightness": 16
-            // },
-            {
-                "visibility": "on"
-            }
-        ]
-    },
-    {
-        "featureType": "road.highway",
-        "elementType": "geometry.fill",
-        "stylers": [
-            {
-                "color": "#50557F"
-            },
-            {
-                "visibility": "on"
-            }
-        ]
-    },
-    {
-        "featureType": "road.highway",
-        "elementType": "geometry.stroke",
-        "stylers": [
-            {
-                "color": "#50557F"
-            },
-            // {
-            //     "lightness": 25
-            // },
-            {
-                "visibility": "on"
-            }
-        ]
-    },
+		"featureType": "road.arterial",
+		"elementType": "geometry.fill",
+		"stylers": [
+			{
+				"color": "#50557F"
+			},
+			{
+				"visibility": "on"
+			}
+		]
+	},
+	{
+		"featureType": "road.arterial",
+		"elementType": "geometry.stroke",
+		"stylers": [
+			{
+				"color": "#50557F"
+			},
+			// {
+			//     "lightness": 16
+			// },
+			{
+				"visibility": "on"
+			}
+		]
+	},
+	{
+		"featureType": "road.highway",
+		"elementType": "geometry.fill",
+		"stylers": [
+			{
+				"color": "#50557F"
+			},
+			{
+				"visibility": "on"
+			}
+		]
+	},
+	{
+		"featureType": "road.highway",
+		"elementType": "geometry.stroke",
+		"stylers": [
+			{
+				"color": "#50557F"
+			},
+			// {
+			//     "lightness": 25
+			// },
+			{
+				"visibility": "on"
+			}
+		]
+	},
 	]
 
 	function initialize() {
@@ -273,11 +273,11 @@ angular.module('starter.controllers', [])
 			styles: style,
 			mapTypeId: google.maps.MapTypeId.ROADMAP,
 			disableDefaultUI: true,
-	        scrollwheel: false,
-	        navigationControl: false,
-	        mapTypeControl: false,
-	        scaleControl: false,
-	        draggable: false
+			scrollwheel: false,
+			navigationControl: false,
+			mapTypeControl: false,
+			scaleControl: false,
+			draggable: false
 		};
 
 		var map = new google.maps.Map(document.getElementById("map"), mapOptions);
@@ -292,23 +292,23 @@ angular.module('starter.controllers', [])
 		var infowindow = new Array();
 
 		var center_options = {
-          url: 'img/center.png',
-          size: new google.maps.Size(50, 50),
-          origin: new google.maps.Point(0,0),
-          anchor: new google.maps.Point(25, 25)
-        };
-        
-        var center_marker = new google.maps.Marker({
-            position: myLatlng,
-            icon: center_options,
-            map: map
-        });
+		  url: 'img/center.png',
+		  size: new google.maps.Size(50, 50),
+		  origin: new google.maps.Point(0,0),
+		  anchor: new google.maps.Point(25, 25)
+		};
+		
+		var center_marker = new google.maps.Marker({
+			position: myLatlng,
+			icon: center_options,
+			map: map
+		});
 
 
 
-	    setMarkers(map, clubs);
+		setMarkers(map, clubs);
 
-	    function setMarkers(map, clubs) { 
+		function setMarkers(map, clubs) { 
 
 			for (var i = 0; i < clubs.length; i++){
 				console.log(clubs[i]);
@@ -380,54 +380,91 @@ angular.module('starter.controllers', [])
   $scope.club = Clubs.get($stateParams.clubId);
   $http.get('/getdetails?id='+$stateParams.clubId).
   success(function(data, status, headers, config) {
-  	console.log(data);
-    // this callback will be called asynchronously
-    // when the response is available
+	console.log(data);
+	// this callback will be called asynchronously
+	// when the response is available
   }).
   error(function(data, status, headers, config) {
-    // called asynchronously if an error occurs
-    // or server returns response with an error status.
+	// called asynchronously if an error occurs
+	// or server returns response with an error status.
   });
 })
 
 
-.controller('CardsCtrl', function($scope, TDCardDelegate) {
-  //console.log('CARDS CTRL');
-  var cardTypes = [
-    { image: 'http://img.dummy-image-generator.com/buildings/dummy-300x300-NYSkyline-plain.jpg' },
-    { image: 'http://img.dummy-image-generator.com/buildings/dummy-300x300-HongKongSkyline-plain.jpg' },
-    { image: 'http://img.dummy-image-generator.com/buildings/dummy-300x300-Hannover-plain.jpg' },
-    { image: 'http://img.dummy-image-generator.com/buildings/dummy-300x300-City-plain.jpg' },
-    { image: 'http://img.dummy-image-generator.com/buildings/dummy-300x300-Stadium-plain.jpg' }
-  ];
+.controller('CardsCtrl', function($scope, $timeout) {
 
-  $scope.currentCardSrc = cardTypes[0].image;
+	$scope.data = [{
+		bild1: {
+			src: '/img/club1.jpg',
+			id: 'top',
+			attribute: [100,0,0,0,0,0,0]
+		},
+		bild2: {
+			src: '/img/club2.jpg',
+			id: 'bottom',
+			attribute: [0,0,0,0,0,0,0]
+		},
+	},{
+		bild1: {
+			src: '/img/club2.jpg',
+			id: 'top',
+			attribute: [0,100,0,0,0,0,0]
+		},
+		bild2: {
+			src: '/img/club1.jpg',
+			id: 'bottom',
+			attribute: [0,0,0,0,0,0,0]
+		}
+	}]
 
-  $scope.cards = Array.prototype.slice.call(cardTypes, 0);
+	$scope.userTraits = [];
 
-  $scope.addCard = function() {
-    var newCard = cardTypes[Math.floor(Math.random() * cardTypes.length)];
-    newCard.id = Math.random();
-    $scope.cards.push(angular.extend({}, newCard));
-     $scope.currentCardSrc = newCard.image;
-  }
+	$scope.index = 0;
+	$scope.dataToDisplay = $scope.data[$scope.index];
 
-  // Funktionen die Getriggert werden, wenn Karte nach links oder rechts gezogen wurde
-  $scope.cardSwipedLeft = function(index) {
-    //console.log('LEFT SWIPE');
-    $scope.addCard();
-  };
-  $scope.cardSwipedRight = function(index) {
-   // console.log('RIGHT SWIPE');
-    $scope.addCard();
-  };
+	$("#splashscreen").delay(1250).fadeOut('slow');
+	
+	$scope.fadeOut = function(){
+		console.log($('#infosplash'))
+		$("#infosplash").fadeOut('slow');
+	}
 
-  $scope.cardDestroyed = function(index) {
-  	// Karte wurde final nach links oder rechts gezogen
-  	//console.log('card weggeschmissen', index);
+	$scope.nextPictures = function(){
+		$('#or,#divideLeft,#divideRight').fadeIn('fast');
+		$scope.index += 1;
 
-    $scope.cards.splice(index, 1);
-  };
+		if($scope.index < $scope.data.length){
+			$scope.dataToDisplay = $scope.data[$scope.index];
+		} else {
+			// http request raussenden & Redirect machen
+			//$location.path('/tab/radar');
+		}
+	}
+
+	$scope.imageHandler = function(el){
+		$scope.userTraits.push(el.attribute[$scope.index]);
+
+		console.log(el);
+		if(el.id == 'top'){
+			$scope.dataToDisplay.bild1.val = '100%';
+			$scope.dataToDisplay.bild2.val = '0%';
+		} else {
+			$scope.dataToDisplay.bild1.val = '0%';
+			$scope.dataToDisplay.bild2.val = '100%';
+		}
+
+		console.log($scope.dataToDisplay);
+
+		$('#'+el.id).addClass('chosen');
+		$('#or,#divideLeft,#divideRight').fadeOut('fast');
+		$('#'+$scope.dataToDisplay.bild1.id).delay(150).animate( {"height": $scope.dataToDisplay.bild1.val }, 300, 'easeOutBack');
+		$('#'+$scope.dataToDisplay.bild2.id).delay(150).animate( {"height": $scope.dataToDisplay.bild2.val }, 300, 'easeOutBack');
+		
+		$timeout(function(){
+			$scope.nextPictures();	
+		}, 2000);
+
+	}
 });
 	
 
