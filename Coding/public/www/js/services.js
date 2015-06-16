@@ -49,7 +49,7 @@ angular.module('starter.services', [])
   };
 })
 
-.factory('Clubs', function() {
+.factory('Clubs', function($http) {
   // Might use a resource here that returns a JSON array
 
   // Some fake testing data
@@ -66,6 +66,9 @@ angular.module('starter.services', [])
   return {
     all: function() {
       return clubs;
+    },
+    recommend: function(){
+      return $http.get('/recommendation');
     },
     remove: function(club) {
       clubs.splice(clubs.indexOf(club), 1);
