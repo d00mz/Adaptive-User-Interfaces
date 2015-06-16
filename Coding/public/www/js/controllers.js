@@ -30,7 +30,7 @@ angular.module('starter.controllers', [])
 		console.log(data,status);
 	});
 
-	$http.get('/getdetails?id='+$stateParams.clubId).
+	Clubs.getDetails($stateParams.clubId).
 	success(function(data, status, headers, config) {
 		console.log(data);
 	}).
