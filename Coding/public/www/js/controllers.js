@@ -1,3 +1,7 @@
+// var clubs = new Array();
+
+
+
 angular.module('starter.controllers', [])
 
 .controller('DashCtrl', function($scope) {})
@@ -22,9 +26,13 @@ angular.module('starter.controllers', [])
 .controller('RadarCtrl', function($scope, Clubs, $ionicLoading, $compile, $rootScope, $location, $http, $stateParams) {
 	$scope.clubs = Clubs.all();
 
+	// $scope.clubs = new Array();
+
 	Clubs.recommend().
 	success(function(data, status, headers, config) {
 		console.log(data,status);
+		// $scope.clubs = data;
+		// initialize();
 	}).
 	error(function(data, status, headers, config) {
 		console.log(data,status);
