@@ -22,6 +22,14 @@ angular.module('starter.controllers', [])
 .controller('RadarCtrl', function($scope, Clubs, $ionicLoading, $compile, $rootScope, $location, $http, $stateParams) {
 	$scope.clubs = Clubs.all();
 
+	Clubs.recommend().
+	success(function(data, status, headers, config) {
+		console.log(data,status);
+	}).
+	error(function(data, status, headers, config) {
+		console.log(data,status);
+	});
+
 	$http.get('/getdetails?id='+$stateParams.clubId).
 	success(function(data, status, headers, config) {
 		console.log(data);
