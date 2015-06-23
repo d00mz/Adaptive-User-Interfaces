@@ -395,23 +395,23 @@ angular.module('starter.controllers', [])
 
 	$scope.data = [{
 		bild1: {
-			src: '/img/club1.jpg',
+			src: 'img/club1.jpg',
 			id: 'top',
 			attribute: [100,0,0,0,0,0,0]
 		},
 		bild2: {
-			src: '/img/club2.jpg',
+			src: 'img/club2.jpg',
 			id: 'bottom',
 			attribute: [0,0,0,0,0,0,0]
 		},
 	},{
 		bild1: {
-			src: '/img/club2.jpg',
+			src: 'img/club2.jpg',
 			id: 'top',
 			attribute: [0,100,0,0,0,0,0]
 		},
 		bild2: {
-			src: '/img/club1.jpg',
+			src: 'img/club1.jpg',
 			id: 'bottom',
 			attribute: [0,0,0,0,0,0,0]
 		}
