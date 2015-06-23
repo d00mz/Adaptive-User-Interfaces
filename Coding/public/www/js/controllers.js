@@ -188,7 +188,7 @@ angular.module('starter.controllers', [])
 
 
 		var center_options = {
-		  url: 'img/profile.png',
+		  url: 'img/profile_dark_bg.png',
 		  size: new google.maps.Size(50, 49),
 		  origin: new google.maps.Point(0,0),
 		  anchor: new google.maps.Point(25, 25)
