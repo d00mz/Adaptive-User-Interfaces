@@ -291,27 +291,26 @@ angular.module('starter.controllers', [])
 		var marker = new Array();
 		var infowindow = new Array();
 
+
 		var center_options = {
-		  url: 'img/center.png',
-		  size: new google.maps.Size(50, 50),
+		  url: 'img/profile.png',
+		  size: new google.maps.Size(50, 49),
 		  origin: new google.maps.Point(0,0),
 		  anchor: new google.maps.Point(25, 25)
 		};
 		
 		var center_marker = new google.maps.Marker({
-			position: myLatlng,
+			position: new google.maps.LatLng(49.8856009,8.6566082),
 			icon: center_options,
 			map: map
 		});
-
-
 
 		setMarkers(map, clubs);
 
 		function setMarkers(map, clubs) { 
 
 			for (var i = 0; i < clubs.length; i++){
-				console.log(clubs[i]);
+				//console.log(clubs[i]);
 
 				marker[i] = new google.maps.Marker({
 					position: new google.maps.LatLng(clubs[i].location[0],clubs[i].location[1]),
