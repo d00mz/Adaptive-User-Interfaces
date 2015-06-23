@@ -32,6 +32,8 @@ var update = function(req, res, next){
 
 var createUser = function(req,res){
 
+	console.log(req.query);
+
 	// Objekt muss vom Kaltstart an die createUser Seite gepostet werden
 	// var userData = req.userData;
 	var userData = {
@@ -42,7 +44,7 @@ var createUser = function(req,res){
 		trait4: 50,
 		trait5: 50,
 		size: 50,
-		location: [0,1],
+		location: [ 49.875658,8.750994],
 		//email: '',
 		//password: 'hallowelt'
 	};

@@ -23,139 +23,34 @@ angular.module('starter.controllers', [])
   };
 })
 
-.controller('RadarCtrl', function($scope, Clubs, $ionicLoading, $compile, $rootScope, $location, $http, $stateParams) {
-	$scope.clubs = Clubs.all();
+.controller('RadarCtrl', function($scope, Clubs, $ionicLoading, $compile, $rootScope, $location, $http, $stateParams,geolocation) {
 
-	// $scope.clubs = new Array();
+	//$scope.clubs = Clubs.all();
 
-	Clubs.recommend().
+	$scope.clubs = new Array();
+
+				
+	Clubs.recommend(window.localStorage.getItem('userID')).
 	success(function(data, status, headers, config) {
 		console.log(data,status);
-		// $scope.clubs = data;
-		// initialize();
+		$scope.clubs = data;
+		initialize();
 	}).
 	error(function(data, status, headers, config) {
 		console.log(data,status);
 	});
 
-	Clubs.getDetails($stateParams.clubId).
+	/*Clubs.getDetails($stateParams.clubId).
 	success(function(data, status, headers, config) {
 		console.log(data);
 	}).
 	error(function(data, status, headers, config) {
 	
-	});
+	});*/
 
 
 
 	console.log($scope.clubs,$scope.clubs.length);
-
-	$scope.remove = function(chat) {
-		Chats.remove(chat);
-	}
-
-	//Map Style
-
-	// var style = [
-	// {
-	//   	"stylers": [{
-	//     	"color": "#15151B"
-	//   }]
-	// },
-	// {
-	//   	"featureType": "water",
-	//   	"stylers": [{
-	//   		"visibility": "on",
-	//     	"color": "#50557F"
-	//   }]
-	// },
-	// {
-	//   	"elementType": "labels",
-	//   	"stylers": [{
-	//     	"visibility": "off"
-	// },
-	// {
- //        "featureType": "road",
- //        "elementType": "geometry.stroke",
- //        "stylers": [
- //            {
- //                "visibility": "on",
- //                "color": "#50557F"
- //            }
- //        ]
- //    },
- //    {
- //        "featureType": "road.local",
- //        "elementType": "geometry",
- //        "stylers": [
- //            {
- //            	"visibility": "on",
- //                "color": "#50557F"
- //            }
- //        ]
- //    },
- //    {
- //        "featureType": "road.local",
- //        "elementType": "geometry.fill",
- //        "stylers": [
- //            {
- //                "visibility": "on",
- //                "color": "#50557F"
- //            }
- //        ]
- //    },
- //    {
- //        "featureType": "road.local",
- //        "elementType": "geometry.stroke",
- //        "stylers": [
- //            {
- //                "visibility": "on",
- //                "color": "#50557F"
- //            }
- //        ]
- //    },
- //    {
- //        "featureType": "road",
- //        "elementType": "geometry.fill",
- //        "stylers": [
- //            {
- //                "visibility": "on",
- //                "color": "#50557F"
- //            }
- //        ]
- //    },
- //    {
- //        "featureType": "road.highway",
- //        "elementType": "geometry",
- //        "stylers": [
- //            {
- //                "visibility": "on"
- //            }
- //        ]
- //    },
- //    {
- //        "featureType": "road.highway",
- //        "elementType": "geometry.fill",
- //        "stylers": [
- //            {
- //                "visibility": "on",
- //                "color": "#50557F"
- //            }
- //        ]
- //    },
- //    {
- //        "featureType": "road.highway",
- //        "elementType": "geometry.stroke",
- //        "stylers": [
- //            {
- //                "visibility": "on",
- //                "color": "#50557F"
- //            }
- //        ]
- //    }
-
-	//   ]
-	// }];
 
 	var style = [
 	{
@@ -340,8 +235,6 @@ angular.module('starter.controllers', [])
 		$scope.map = map;
 	}
 
-	initialize();
-
 
 	$scope.centerOnMe = function() {
 		if(!$scope.map) {
@@ -366,6 +259,15 @@ angular.module('starter.controllers', [])
 	};
 
 
+
+
+
+	geolocation.getLocation().then(function(data){
+     	var blabla= {lat:data.coords.latitude, long:data.coords.longitude};
+     	console.log(blabla);
+    });
+
+
 })
 
 
@@ -376,21 +278,26 @@ angular.module('starter.controllers', [])
 
 
 .controller('RadarDetailCtrl', function($scope, $stateParams, $http, Clubs) {
-  $scope.club = Clubs.get($stateParams.clubId);
-  $http.get('/getdetails?id='+$stateParams.clubId).
-  success(function(data, status, headers, config) {
-	console.log(data);
-	// this callback will be called asynchronously
-	// when the response is available
-  }).
-  error(function(data, status, headers, config) {
-	// called asynchronously if an error occurs
-	// or server returns response with an error status.
-  });
+	$scope.club = Clubs.get($stateParams.clubId);
+	$http.get('/getdetails?id='+$stateParams.clubId).
+	success(function(data, status, headers, config) {
+		console.log(data);
+		// this callback will be called asynchronously
+		// when the response is available
+	}).
+	error(function(data, status, headers, config) {
+		// called asynchronously if an error occurs
+		// or server returns response with an error status.
+	});
 })
 
 
-.controller('CardsCtrl', function($scope, $timeout) {
+.controller('CardsCtrl', function($scope, $timeout, $http,$state,geolocation) {
+
+	geolocation.getLocation().then(function(data){
+     	var blabla= {lat:data.coords.latitude, long:data.coords.longitude};
+     	console.log(blabla);
+    });
 
 	$scope.data = [{
 		bild1: {
@@ -437,6 +344,21 @@ angular.module('starter.controllers', [])
 		} else {
 			// http request raussenden & Redirect machen
 			//$location.path('/tab/radar');
+			
+
+			console.log('redirect');
+
+			$http.get('/createUser?traits=' + $scope.userTraits)
+			.then(function(response) {
+				console.log(response);
+				window.localStorage.setItem('userID', response.data._id);
+				$state.go('tab.radar');
+				// success
+			}, 
+			function(response) { // optional
+				window.localStorage.setItem('userID', '');
+				// failed
+			});
 		}
 	}
 
@@ -464,6 +386,7 @@ angular.module('starter.controllers', [])
 		}, 2000);
 
 	}
+
 });
 	
 

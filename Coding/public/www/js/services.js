@@ -64,8 +64,8 @@ angular.module('starter.services', [])
               {"_id":"5468f7e8c894718ed43ec6e7","name":"Herkules","trait1":1.2,"trait2":2,"trait3":1.4,"trait4":2,"trait5":2,"size":2.8,"location":[49.874208, 8.651297]}];
 
   return {
-    recommend: function(){
-      return $http.get('/recommendation');
+    recommend: function(userID){
+      return $http.get('/recommendation?userID='+userID);
     },
     getDetails: function(clubId){
       return $http.get('/getdetails?id='+clubId);
