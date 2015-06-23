@@ -446,11 +446,11 @@ angular.module('starter.controllers', [])
 
 		console.log(el);
 		if(el.id == 'top'){
-			$scope.dataToDisplay.bild1.val = '100%';
-			$scope.dataToDisplay.bild2.val = '0%';
+			$scope.dataToDisplay.bild1.val = '100vh';
+			$scope.dataToDisplay.bild2.val = '0vh';
 		} else {
-			$scope.dataToDisplay.bild1.val = '0%';
-			$scope.dataToDisplay.bild2.val = '100%';
+			$scope.dataToDisplay.bild1.val = '0vh';
+			$scope.dataToDisplay.bild2.val = '100vh';
 		}
 
 		console.log($scope.dataToDisplay);
