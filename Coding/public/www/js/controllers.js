@@ -200,6 +200,12 @@ angular.module('starter.controllers', [])
 			map: map
 		});
 
+		google.maps.event.addListener(center_marker, 'click', function(e) {
+			$rootScope.$apply(function() {
+				$location.path('/tab/account');
+			});
+		});
+
 		setMarkers(map, clubs);
 
 		function setMarkers(map, clubs) { 
@@ -278,10 +284,11 @@ angular.module('starter.controllers', [])
 
 
 .controller('RadarDetailCtrl', function($scope, $stateParams, $http, Clubs) {
-	$scope.club = Clubs.get($stateParams.clubId);
+	$scope.club = '';
 	$http.get('/getdetails?id='+$stateParams.clubId).
 	success(function(data, status, headers, config) {
 		console.log(data);
+		$scope.club=data;
 		// this callback will be called asynchronously
 		// when the response is available
 	}).
